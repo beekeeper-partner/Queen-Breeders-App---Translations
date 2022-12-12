@@ -1,3 +1,7 @@
-<img style="background: white; border-radius: 10px; margin: 40px auto 20px; display: block; max-width: 300px" src="https://partnerpszczelarza.pl/wp-content/uploads/2021/09/aplikacja_hodowcy_matek_logo_partner_pszczelarza.png">
+<div align="center"> 
+<img style="width:300px" src="https://partnerpszczelarza.pl/wp-content/uploads/2022/12/partner_pszczelarza_aplikacja_hodowcy_white.png" alt=""/>
+  
+# Beekeeper's Partner - Queen Breeding app <br/>translations 
+</div>
 
-# Beekeeper's Partner - Queen Breeding app translations 
+
