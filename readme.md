@@ -17,7 +17,7 @@ You should already know what to do. Just clone or fork the repository, and when 
 We can also add you as an contributor to this repository, so let us know if that option work for you as well. 
 
 ### I'm not a github user 
-You can download the whole repository as a ZIP file. Go to Code -> Local -> Download ZIP.
+You can download the whole repository as a ZIP file (start here: https://github.com/beekeeper-partner/Queen-Breeders-App---Translations). Go to Code -> Local -> Download ZIP.
 ![](docs/download_zip_github.png)
 
 After you're done with translations - just send them via email to [hello@partnerpszczelarza.pl](mailto:hello@partnerpszczelarza.pl).
