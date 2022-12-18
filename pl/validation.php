@@ -73,7 +73,8 @@ return [
     'longer_than_2' => 'Wpisz przynajmniej 2 litery',
     'lt' => [
         'numeric' => 'The :attribute must be less than :value.',
-        'file' => 'The :attribute must be less than :value kilobytes.',
+        'file' => 'Plik musi mieć rozmiar mniejszy niż :value kB.',
+        'fileMb' => 'Plik musi mieć rozmiar mniejszy niż :value mB.',
         'string' => 'The :attribute must be less than :value characters.',
         'array' => 'The :attribute must have less than :value items.',
     ],

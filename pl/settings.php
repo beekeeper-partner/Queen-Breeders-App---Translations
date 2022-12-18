@@ -35,7 +35,8 @@ return [
         'editModalTitle' => 'Edytuj sezon :name',
         'addModalTitle' => 'Dodaj sezon',
     ],
-    'queenLinesNameLabel' => 'Nazwa linii hodowlanej',
+    'queenLinesNameLabel' => 'Skrócona nazwa',
+    'queenLinesFullNameLabel' => 'Pełna nazwa',
     'queenLinesNameLabelShort' => 'Linia',
     'allQueenLinesLabel' => 'Wszystkie linie',
     'beeSubspeciesNameLabel' => 'Rasa',
@@ -90,5 +91,14 @@ return [
         'cardTitle' => 'Dane kontaktowe',
         'inputContactEmailLabel' => 'Email',
         'inputContactPhoneLabel' => 'Nr telefonu',
+    ],
+    'apiaryLogo' => [
+        'cardTitle' => 'Logo pasieki',
+        'cardSubTitle' => 'Tutaj możesz dodać logo swojej pasieki. Wykorzystamy je między innymi w trakcje generowania plików pdf.',
+        'uploadForm' => [
+            'cardTitle' => 'Prześlij logo',
+            'cardSubTitle' => 'Wymagania co do pliku: rozmiar maksymalnie 500kB, format: png, jpg, jpeg.',
+            'inputFile' => 'Wybierz plik',
+        ],
     ]
 ];

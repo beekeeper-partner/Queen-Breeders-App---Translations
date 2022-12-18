@@ -29,7 +29,7 @@ return [
         'breeding_registry_score' => 'Ocena punktowa',
         'breeding_registry_score_short' => 'Ocena pkt.',
         'is_race_confirmed' => 'Potwierdzona przynależność rasowa',
-        'is_race_confirmed_short' => 'Przynależność rasowa',
+        'is_race_confirmed_short' => 'Przyn. rasowa',
         'is_race_confirmed_hint' => 'Czy wykonano badanie morfometryczne dla tej matki?',
         'actions' => 'Akcje',
         'born_at' => 'Data urodzenia',

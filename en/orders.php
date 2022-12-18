@@ -100,6 +100,7 @@ return [
     'clientCooperationNullLabel' => 'All good',
     'clientCooperationWarningLabel' => 'Warning',
     'clientCooperationBlockListLabel' => 'Block list',
+    'notes' => 'Notes',
 
     // Orders
     'fabAddOrderTooltip' => 'Add new order',
@@ -283,5 +284,10 @@ return [
         'us' => 'AI',
         'uss' => 'AIC',
         'nucs' => 'Nucs',
+    ],
+    'files' => [
+        'emptyTitle' => 'Attached files',
+        'title' => 'Attached files (:value)',
+        'addFile' => 'Add new file',
     ],
 ];

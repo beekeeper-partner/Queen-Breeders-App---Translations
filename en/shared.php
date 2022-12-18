@@ -52,4 +52,8 @@ return [
     'reject' => 'Reject',
     'true' => 'Yes',
     'false' => 'No',
+    'copy' => '-copy',
+    'uploadBtn' => 'Upload',
+    'chooseBtn' => 'Choose',
+    'downloadBtn' => 'Download',
 ];

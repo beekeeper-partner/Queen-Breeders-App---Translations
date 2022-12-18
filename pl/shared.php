@@ -52,4 +52,8 @@ return [
     'reject' => 'Odrzuć',
     'true' => 'Tak',
     'false' => 'Nie',
+    'copy' => '-kopia',
+    'uploadBtn' => 'Prześlij',
+    'chooseBtn' => 'Wybierz',
+    'downloadBtn' => 'Pobierz',
 ];

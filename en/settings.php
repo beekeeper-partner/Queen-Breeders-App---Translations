@@ -2,6 +2,7 @@
 return [
     'nav' => [
         'apiaryLabel' => 'Apiary',
+        'apiaryLogo' => 'Logo',
         'teamLabel' => 'Team',
         'queenLinesLabel' => 'Queen lines',
         'seasonsLabel' => 'Seasons',
@@ -48,6 +49,12 @@ return [
     'a_m_carnica' => 'A. m. carnica',
     'a_m_caucasica' => 'A. m. caucasica',
     'a_m_ligustica' => 'A. m. ligustica',
+    'queen_lines' => [
+        'a_m_mellifera' => 'A. m. mellifera',
+        'a_m_carnica' => 'A. m. carnica',
+        'a_m_caucasica' => 'A. m. caucasica',
+        'a_m_ligustica' => 'A. m. ligustica',
+    ],
     'crossbreed' => 'Cross-breed',
     'hybrid' => 'Hybrid',
     'deleteQueenLineSuccessMessage' => 'Queen line :name was deleted successfully',
@@ -67,7 +74,6 @@ return [
     'seriesEfficiencyHint' => 'Series efficiency is used for prognosis calculation - as initial value.',
     'updatedSuccess' => 'Settings were updated successfully',
 
-
     'invoice' => [
         'cardTitle' => 'Invoicing details',
         'inputAddressStreetLabel' => 'Street',
@@ -85,5 +91,14 @@ return [
         'cardTitle' => 'Contact details',
         'inputContactEmailLabel' => 'Email',
         'inputContactPhoneLabel' => 'Phone number',
+    ],
+    'apiaryLogo' => [
+        'cardTitle' => 'Apiary logo',
+        'cardSubTitle' => 'You can upload your customized apiary logotype. We can use it in generated pdf files and in application layout.',
+        'uploadForm' => [
+            'cardTitle' => 'Upload new logo',
+            'cardSubTitle' => 'File restrictions: size max 500kB, format: png, jpg, jpeg.',
+            'inputFile' => 'Choose file',
+        ],
     ]
 ];

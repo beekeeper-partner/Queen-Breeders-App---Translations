@@ -100,6 +100,7 @@ return [
     'clientCooperationNullLabel' => 'Brak uwag',
     'clientCooperationWarningLabel' => 'Ostrzeżenie',
     'clientCooperationBlockListLabel' => 'Czarna lista',
+    'notes' => 'Notatki',
 
     // Orders
     'fabAddOrderTooltip' => 'Dodaj nowe zamówienie',
@@ -283,5 +284,10 @@ return [
         'us' => 'US',
         'uss' => 'USS',
         'nucs' => 'Odkład',
+    ],
+    'files' => [
+        'emptyTitle' => 'Dodaj pliki',
+        'title' => 'Dołączone pliki (:value)',
+        'addFile' => 'Dodaj nowy plik',
     ],
 ];
