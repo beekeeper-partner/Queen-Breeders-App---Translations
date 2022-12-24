@@ -1,6 +1,6 @@
 <?php
 return [
-    'pageTitle' => 'Arbeid i bygården',
+    'pageTitle' => 'Arbeid i bigården',
     'pageSubtitle' => 'Arbeidspanel hjelper deg med å administrere daglige aktiviteter for bigården din.',
 
     //Modal
