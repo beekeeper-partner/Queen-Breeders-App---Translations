@@ -35,6 +35,7 @@ return [
         'editModalTitle' => 'Edytuj sezon :name',
         'addModalTitle' => 'Dodaj sezon',
     ],
+    'queenLinesNameSingular' => 'Linia matek', //Rekken av mødre
     'queenLinesNameLabel' => 'Skrócona nazwa',
     'queenLinesFullNameLabel' => 'Pełna nazwa',
     'queenLinesNameLabelShort' => 'Linia',

@@ -36,6 +36,7 @@ return [
         'editModalTitle' => 'Rediger sesong :name',
         'addModalTitle' => 'Legg til ny sesong',
     ],
+    'queenLinesNameSingular' => 'Dronning linjer',
     'queenLinesNameLabel' => 'Kort navn',
     'queenLinesFullNameLabel' => 'Fullt navn',
     'queenLinesNameLabelShort' => 'Linje',

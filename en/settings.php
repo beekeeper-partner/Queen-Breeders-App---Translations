@@ -36,6 +36,7 @@ return [
         'editModalTitle' => 'Edit season :name',
         'addModalTitle' => 'Add new season',
     ],
+    'queenLinesNameSingular' => 'Queen line',
     'queenLinesNameLabel' => 'Short name',
     'queenLinesFullNameLabel' => 'Full name',
     'queenLinesNameLabelShort' => 'Line',
