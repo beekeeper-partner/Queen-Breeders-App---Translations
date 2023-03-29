@@ -31,4 +31,7 @@ return [
     'rejectInvitationSuccessMsg' => 'Invitation was declined.',
     'rejectInvitationErrorMsg' => 'There was a problem while performing this action. Please try again.',
     'addApiaryTitle' => 'Add new Apiary',
+    'country' => [
+        'label' => 'Your country'
+    ],
 ];

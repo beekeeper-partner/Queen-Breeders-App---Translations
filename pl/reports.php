@@ -4,7 +4,7 @@ return [
     'pageSubtitle' => 'Na tej stronie możesz przejrzeć rozliczenia ze związkami pszczelarskimi posiadającymi w Twojej pasiece zrealizowane zamówienia refundowane.',
 
     //Union Card
-    'countOfOrdersLabel' => 'Ilość zamówień',
+    'countOfOrdersLabel' => 'Ilość wysyłek',
     'sumOfOrdersValueLabel' => 'Łączna kwota',
     'yearLabel' => 'Za rok',
     'filterByYearLabel' => 'Wybierz rok',
@@ -16,7 +16,7 @@ return [
     'reportYearLabel' => 'Raporty za rok',
     'reportLabel' => 'Raport',
     'reportMultipleLabel' => 'Raporty',
-    'addNewReportBtnLabel' => 'Dodaj nowy raport',
+    'addNewReportBtnLabel' => 'Dodaj nowy raport za rok :year',
     '404Subtitle' => 'Nie znaleźliśmy jeszcze raportu dla tego roku. Dodaj nowy raport aby rozpocząć rozliczenie z wybranym związkiem.',
     'sumLabel' => 'Suma',
 

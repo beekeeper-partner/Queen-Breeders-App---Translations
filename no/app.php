@@ -8,7 +8,7 @@ return [
                             <br/>Du kan slette en bikube som er på lageret eller flytte den tilbake til ønsket plassering.',
     'valuta' => [
         'pl' => 'PLN',
-	'No' => 'NOK'
+        'No' => 'NOK'
     ],
     'invitations' => 'Venter på invitasjoner til andre bigårder',
     'supportTeam_first_name' => 'Brukerstøtte',

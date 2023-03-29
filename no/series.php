@@ -12,7 +12,7 @@ return [
     'serieMaxCountLabel' => 'Forventet antall dronninger',
     'fabAddNewSerieTooltip' => 'Legg til ny serie',
     'newSerieInfoTitle' => 'Hva er serier for i vår applikasjon?',
-    'newSerieInfoDesc' => 'Med serier kan du planlegge bedre fra det øyeblikket larver flyttes til det tidspunktet da dronninger blir født i klekkeskapet. Opprettede serier sammenlignes med salgsprognose basert på dine bestillinger, og gir deg innspill om hvor mange bestillinger du kan håndtere i løpet av sesongen.',
+    'newSerieInfoDesc' => 'Med serier kan du planlegge bedre fra det øyeblikket larver flyttes til det tidspunktet da dronninger blir født i klekkeskapet. Opprettede serier sammenlignes med salgsprognose basert på dine bestillinger, og gir deg innspill om hvor mange bestillinger du kan håndtere i løpet av sesongen. <a href="https://partnerpszczelarza.pl/aplikacja-hodowcy/dokumentacja/hodowla/serie-hodowlane/" target="_blank">Read more in our documentation.</a>',
     'serieNameLabel' => 'Serie navn',
     'manualEfficiencyLabel' => 'Bruk standard effektivitetssett',
     'editSerieModalTitle' => 'Rediger serien',
@@ -47,5 +47,18 @@ return [
     'day_isolated' => 'Isolasjonsdag',
     'day_born' => 'Fødselsdag',
     'allGoodText' => 'Alt bra her! Det er ingenting å jobbe med her i dag eller alle oppgavene var allerede fullført',
+
+    'form' => [
+        'comment' => 'Comment',
+        'queen_mother_id' => 'Reproductive queen',
+        'queen_mother_id_info' => 'Choose reproductive queen from available ones to mark all queens born in this series as daughters. This will help you with keeping lineage settings in place.',
+        'is_excluded_from_statistics' => 'Exclude series from analytics',
+        'is_excluded_from_statistics_tooltip' => 'Excluded from analytics',
+        'is_excluded_from_statistics_info' => 'We will skip excluded series from analytics  obliczaniu uśrednionych wydajności. Polecamy wyłączenie ze statystyk pierwszych serii utworzonych w sezonie, gdyż mogą one mieć największy rozrzut w efektywności poszczególnych kroków.',
+    ],
+    'planning' => [
+        'dateInfo' => 'The dates represent when the first and last series of queens are born. We will calculate other dates for you.',
+        'expectedInfo' => 'Let us know how many queen bees you expect to have for sale for the created series. You can change the number for the selected series at any time.',
+    ],
 
 ];

@@ -79,7 +79,7 @@ return [
         'array' => 'The :attribute must have less than :value items.',
     ],
     'lte' => [
-        'numeric' => 'Wartość nie może być większa niż :value.',
+        'numeric' => 'Wartość musi być mniejsza lub równa :value.',
         'file' => 'The :attribute must be less than or equal :value kilobytes.',
         'string' => 'Wprowadzona wartość nie może być dłuższa niż :value znaków.',
         'array' => 'The :attribute must not have more than :value items.',
@@ -99,7 +99,8 @@ return [
         'array' => 'The :attribute must have at least :min items.',
     ],
     'multiple_of' => 'The :attribute must be a multiple of :value.',
-    'name_exists' => 'Ul o takiej nazwie już istnieje w tej lokalizacji.',
+    'name_exists' => 'Taka nazwa istnieje już w tym widoku.',
+    'code_exists' => 'Kod już istnieje.',
     'not_in' => 'The selected :attribute is invalid.',
     'negative' => 'Wartość nie może być ujemna.',
     'not_regex' => 'The :attribute format is invalid.',

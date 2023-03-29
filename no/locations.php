@@ -34,15 +34,18 @@ return [
                                     <p class="mb-1 pl-3">For eksempel, hvis noen få dronninger på et gitt sted ikke er til salgs, kan du legge dem i en egen seksjon.</p>',
     'selectLocationSectionLabel' => 'Velg en seksjon',
     'addNewHiveNameLabel' => 'Skriv inn bikubenavn',
-    'newHiveModalTitle' => 'Legg til ny bikube',
+    'newHiveModalTitle' => 'Legg til ny bikuber',
     'editHiveModalTitle' => 'Rediger bikube',
+    'editHivesModalTitle' => 'Rediger bikube',
     'newHiveInfoTitle' => 'Hvordan brukes bikubene i vår applikasjon?',
     'newHiveInfoDesc' => '<p class="mb-1 pl-3">Bikuber i applikasjonen vår er designet for å avle én enkelt dronning om gangen.
                             </p><p class="mb-1 pl-3">Så hvis du bruker bikuber med flere kammer, legg til hvert kammer som en separat bikube.</p>',
     'addSingleHiveSuccessMessage' => 'Hive opprettet vellykket! Du kan legge til en til eller lukke denne boksen.',
     'addMultipleHiveSuccessMessage' => 'Bikuber ble lagt til!',
     'editSingleHiveSuccessMessage' => 'Bikuben ble redigert.',
+    'editMultipleHivesSuccessMessage' => 'Bikuber ble redigert.',
     'deleteSingleHiveSuccessMessage' => 'Bikube :hiveName slettet.',
+    'deleteMultipleHivesSuccessMessage' => 'Bikuber ble slettet.',
     'moveToWarehouseLabel' => 'Flytte til lageret',
     'moveHiveToWarehouseSuccessMessage' => 'Bikube :hiveName ble flyttet til lageret',
     'saveAndMoveBtnLabel' => 'Lagre og flytt',
@@ -93,4 +96,6 @@ return [
     'queenBatchLabelShort' => 'Batch',
     'queenLineLabelShort' => 'Linje',
     'queenCycleLabelShort' => 'Syklus',
+
+    'selectedHives' => 'Selected hives: :value',
 ];

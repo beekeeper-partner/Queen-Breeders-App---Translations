@@ -36,13 +36,16 @@ return [
     'addNewHiveNameLabel' => 'Enter hive name',
     'newHiveModalTitle' => 'Add new hive',
     'editHiveModalTitle' => 'Edit hive',
+    'editHivesModalTitle' => 'Edit hives',
     'newHiveInfoTitle' => 'How the hives are used in our application?',
     'newHiveInfoDesc' => '<p class="mb-1 pl-3">Hives in our application are designed to breed one single queen at a time.
                             </p><p class="mb-1 pl-3">So if you are using multi-chamber hives, add each chamber as a separate hive.</p>',
     'addSingleHiveSuccessMessage' => 'Hive created successfully! You can add another one or close this box.',
     'addMultipleHiveSuccessMessage' => 'Hives added successfully!',
     'editSingleHiveSuccessMessage' => 'Hive edited successfully.',
+    'editMultipleHivesSuccessMessage' => 'Hives edited successfully.',
     'deleteSingleHiveSuccessMessage' => 'Hive :hiveName deleted successfully.',
+    'deleteMultipleHivesSuccessMessage' => 'Hives deleted successfully.',
     'moveToWarehouseLabel' => 'Move to warehouse',
     'moveHiveToWarehouseSuccessMessage' => 'Hive :hiveName was moved to warehouse',
     'saveAndMoveBtnLabel' => 'Save and move',
@@ -93,4 +96,6 @@ return [
     'queenBatchLabelShort' => 'Batch',
     'queenLineLabelShort' => 'Line',
     'queenCycleLabelShort' => 'Cycle',
+
+    'selectedHives' => 'Selected hives: :value',
 ];

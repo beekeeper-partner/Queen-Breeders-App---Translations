@@ -16,7 +16,7 @@ return [
     'reportYearLabel' => 'Reports for year',
     'reportLabel' => 'Report',
     'reportMultipleLabel' => 'Reports',
-    'addNewReportBtnLabel' => 'Add new report',
+    'addNewReportBtnLabel' => 'Add new report for :year',
     '404Subtitle' => 'We did not find any report for selected year. Add new report to start a settlement with the union.',
     'sumLabel' => 'Suma',
 

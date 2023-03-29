@@ -29,6 +29,7 @@ return [
     'saveOrderSuccessMessage' => 'Bestillinger ble lagret',
     'cancelOrderSuccessMessage' => 'Bestillingen ble kansellert',
     'addNewClubBtnLabel' => 'Legg til ny fagforening',
+    'editClubBtnLabel' => 'Edit club data',
     'addNewUnionBtnLabel' => 'Legg til ny fagforening',
     'editUnionBtnLabel' => 'Edit union data',
     'clubEmailLabel' => 'Klubbens e-postadresse',
@@ -60,6 +61,7 @@ return [
     'productsCardSubtitle' => 'Du kan spesifisere flere produkter som vil være tilgjengelige i bigården din.',
     'deleteProductTooltip' => 'Slett Produkt',
     'addNewProductBtnLabel' => 'Legg til ny produkt',
+    'editNewProductBtnLabel' => 'Edit product',
     'defineNewProductBtnLabel' => 'Definer ny produkt',
     'productAddedSuccessMessage' => 'Produktet ble lagt til',
     'productsDeleteSuccessMessage' => 'Produktet ble slettet',
@@ -74,6 +76,9 @@ return [
     'clientsDeleteSuccessMessage' => 'Klienten ble slettet',
     'clientsCreatedSuccessMessage' => 'Klienten ble lagt til',
     'clientsUpdatedSuccessMessage' => 'Klienten ble redigert',
+    'client' => [
+        'active_info' => 'Active clients are visible in the system, allowing you to use them in selected orders or for filtering. We will hide inactive entries from the application but make them visible for reports and archived orders.',
+    ],
     'fabAddClientTooltip' => 'Legg til ny klient',
     'fabClientEditTitle' => 'Rediger klient',
     'fabClientChangeTitle' => 'Legg til og erstatt klient',
@@ -100,6 +105,7 @@ return [
     'clientCooperationNullLabel' => 'Helt fint',
     'clientCooperationWarningLabel' => 'Advarsel',
     'clientCooperationBlockListLabel' => 'Blokkeringsliste',
+    'notes' => 'Notater',
 
     // Orders
     'fabAddOrderTooltip' => 'Legg til ny ordre',
@@ -175,6 +181,9 @@ return [
     'productLabel' => 'Produkter',
     'productSearchPlaceholder' => 'Begynn å skrive for å søke etter et produkt',
     'productCountLabel' => 'Telle',
+    'productCodeLabel' => 'Code',
+    'productPriceShortLabel' => 'Price',
+    'productSumShortLabel' => 'Value',
     'showAdvancedBtnLabel' => 'Avansert',
     'productRefundedLabel' => 'Refundert',
     'advancedSettingsTitle' => 'Avanserte innstillinger',
@@ -183,14 +192,18 @@ return [
     'noDateSetLabel' => 'Ingen dato satt ennå',
 
     //Queen Types
-    'productQueenTypeLabel' => 'Dronning type i system',
-    'productQueenTypeShortLabel' => 'Dronning type',
-    'productQueenType_null' => '--',
-    'productQueenType_nu' => 'Jomfru dronning',
-    'productQueenType_un' => 'Inseminert naturlig',
-    'productQueenType_us' => 'Inseminert kunstig',
-    'productQueenType_uss' => 'Inseminert kunstig med bekreftet yngel',
-    'productQueenType_nucs' => 'Skaksverm',
+    'productQueenType' => [
+        'label' => 'Dronning type i system',
+        'label_short' => 'Dronning type',
+        'tooltip_info' => 'Matching the product with queen type used in our system can help us to connect your product with our forecasting.',
+        'null' => '--',
+        'nu' => 'Jomfru dronning',
+        'un' => 'Inseminert naturlig',
+        'us' => 'Inseminert kunstig',
+        'uss' => 'Inseminert kunstig med bekreftet yngel',
+        'nucs' => 'Skaksverm',
+        'cell' => 'Queen cell',
+    ],
 
     //Shipments
     'addNewShipmentBtnLabel' => 'Legg til ny forsendelse',
@@ -283,5 +296,48 @@ return [
         'us' => 'NP',
         'uss' => 'I',
         'nucs' => 'SKAK',
+    ],
+    'files' => [
+        'emptyTitle' => 'Vedlagte filer',
+        'title' => 'Vedlagte filer (:value)',
+        'addFile' => 'Legg til ny fil',
+    ],
+    'unions' => [
+        'active' => 'Active',
+        'inactive' => 'Union inactive',
+        'active_info' => 'Active unions are visible in the system, allowing you to use them in selected orders or for filtering. We will hide inactive entries from the application but make them visible for reports and archived orders.',
+    ],
+    'unitTypes' => [
+        'label' => 'Unit',
+        'null' => '',
+        'null_short' => '',
+        'piece' => 'Piece',
+        'piece_short' => 'Pc.',
+        'set' => 'Set',
+        'set_short' => 'set',
+    ],
+    'shipment' => [
+        'payment_type' => 'Payment type',
+        'payment_type_info' => 'Information about payment type can help us to connect this shipment with our invoicing functionality.',
+        'cannotDeleteInfo' => 'We cannot delete this shipment as there are existing orders in our system. Please deactivate it if you want to hide it from future orders.',
+    ],
+    'paymentTypes' => [
+        'null' => '--',
+        'cash' => 'Cash',
+        'cash_on_delivery' => 'Cash on delivery',
+        'transfer' => 'Transfer',
+        'card' => 'Card',
+    ],
+    'orderNumberingTypes' => [
+        'null' => '--',
+        'monthly' => 'Monthly',
+        'yearly' => 'Yearly',
+    ],
+    'settings' => [
+        'general' => [
+            'title' => 'General settings',
+            'subtitle' => 'Here you can find some general settings for your orders module.',
+            'order_numbering_format' => 'Orders numbering format',
+        ],
     ],
 ];

@@ -1,6 +1,6 @@
 <?php
 return [
-    'appName' => 'Hodowcy Matek',
+    'appName' => 'Aplikacja Hodowcy',
     'homeTitle' => 'Panel Hodowcy',
     'homeSubtitle' => 'Tutaj możesz przejrzeć obecny stan Twojej pasieki hodowlanej. Poprzez wybranie linii hodowlanej matek możesz przejrzeć szczegółowe dane dotyczące obecnego stanu oraz prognoz.',
     'warehousePageTitle' => 'Magazyn',

@@ -27,5 +27,6 @@ return [
         'team' => 'Zespół',
         'queenLines' => 'Linie hodowlane',
         'orders' => 'Zamówienia',
+        'subscriptions' => 'Subskrypcje'
     ]
 ];

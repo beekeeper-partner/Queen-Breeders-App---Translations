@@ -5,19 +5,20 @@ return [
         'navTitle' => 'Breeding registry',
         'subtitle' => 'This panel helps you manage breeding queens in your apiary. You can find here queens intended for reproduction, along with those which can be sold to your clients.',
     ],
-    'types' => [
+    'used_as' => [
         'evaluated' => 'In evaluation',
         'reproductive' => 'Reproductive',
         'usable' => 'Other',
+        'internal_use' => 'Internal use',
     ],
     'table' => [
         'index' => 'No.',
-        'name' => 'Marker no.',
-        'nameLabel' => 'Marker no. / Breeding record',
+        'marker_number' => 'Marker no.',
+        'nameLabel' => 'Breeding record / Marker no.',
         'nameLabelShort' => 'Number',
-        'breeding_registry_number' => 'Breeding record number',
-        'breeding_registry_type' => 'State',
-        'breeding_registry_hive_name' => 'Hive name',
+        'number' => 'Breeding record number',
+        'used_as' => 'Used as',
+        'custom_hive_name' => 'Hive name',
         'breeding_registry_herd_book' => 'Registry entries',
         'breeding_registry_number_in_herd_book' => 'Herd book number',
         'breeding_registry_number_in_herd_book_lineage_table' => 'Herd book no.',
@@ -53,6 +54,8 @@ return [
         'insemination_type' => 'Insemintation type',
         'notes' => 'Notes',
         'group' => 'Group',
+        'is_alive' => 'Is alive',
+        'is_alive_info' => 'This setting can help us track queen bees that left your apiary as a living queen. Based on this information we will generate statistics about queens lost during breeding.',
     ],
     'sections' => [
         'general' => 'General',
@@ -64,10 +67,10 @@ return [
     'status' => [
         'active' => 'Active',
         'sold' => 'Sold',
-        'inactive' => 'Inactive',
+        'lost' => 'Lost',
     ],
     'modal' => [
-        'editTitle' => 'Edit queen :queenName (:queenNumber)',
+        'editTitle' => 'Edit queen :queenNumber - :queenName :queenColor',
         'addTitle' => 'Add new queen to registry',
         'deleteBtnInfo' => 'Deleting not possible: lack of permission or the queen is connected with other queens',
     ],
@@ -104,5 +107,11 @@ return [
         'green' => 'G',
         'red' => 'R',
         'yellow' => 'Y',
+    ],
+    'used_in' => [
+        'general' => 'Visible in',
+        'general_info' => 'Queen bees in stock will be visible in the orders stock and can be attached to the selected order. You can find queens visible in the apiary in the current state of the apiary.',
+        'apiary' => 'Apiary',
+        'stock' => 'Stock',
     ],
 ];

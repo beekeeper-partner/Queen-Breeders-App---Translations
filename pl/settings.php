@@ -2,6 +2,7 @@
 return [
     'nav' => [
         'apiaryLabel' => 'Pasieka',
+        'apiaryLogo' => 'Logo',
         'teamLabel' => 'Zespół',
         'queenLinesLabel' => 'Linie matek',
         'seasonsLabel' => 'Sezony',
@@ -12,9 +13,12 @@ return [
     ],
     'apiary' => [
         'cardTitle' => 'Dane pasieki',
+        'cardSubTitle' => "Tutaj znajdziesz dane podane przy rejestracji, możesz je w dowolnej chwili zmienić. W zależności od wybranego kraju możemy lepiej dopasować nasze funkcjonalności do Twojej pasieki. Pamiętaj, że możesz użyć również skróconej nazwy Twojej pasieki, pełna nazwa może być ustawiona w sekcji Fakturowania.",
     ],
     'efficiency' => [
+        'title' => 'Wydajności',
         'cardTitle' => 'Ustawienia wydajności',
+        'cardSubTitle' => 'W naszych prognozach wykorzystujemy wartość wydajności dla poszczególnych sekcji aplikacji. Dopóki aplikacja nie posiada wystarczającej ilości danych historycznych - używane są domyśle wartości z tej strony.',
     ],
     'queenLines' => [
         'cardTitle' => 'Linie hodowlane',
@@ -34,7 +38,27 @@ return [
         'deleteSuccessMessage' => 'Pomyślnie usunięto sezon :name.',
         'editModalTitle' => 'Edytuj sezon :name',
         'addModalTitle' => 'Dodaj sezon',
+        'startingNumberHint' => 'Przykład: :value',
+        'queenNumbering' => [
+            'title' => 'Numeracja matek pszczelich w sezonie',
+            'titleShort' => 'Numeracja matek',
+            'subtitle' => 'Aplikacja automatycznie przydziela numery hodowlane matkom urodzonym w Twojej pasiece. Domyślnie pierwsza matka w danym roku dostanie numer 1/ROK (przykładowo: 1/2023). Poniżej możesz spersonalizować numerację w danym sezonie.',
+        ],
+        'queen_series_starting_number' => 'Numer początkowy',
+        'queen_series_prefix' => 'Prefiks numeracji',
+        'daysOff' => [
+            'title' => 'Dni wolne',
+            'subtitle' => 'Dodaj dni wolne, w których wysyłka produktów jest niemożliwa. Podświetlimy te dni w kalendarzu zamówień',
+            'downloadPublicHolidays' => 'Pobierz święta i dni wolne w :year',
+            'table' => [
+                'date' => 'Data',
+                'name' => 'Nazwa dnia',
+                'saveChangesBtn' => 'Zapisz zmiany',
+                'addNewBtn' => 'Dodaj do listy',
+            ],
+        ],
     ],
+    'queenLinesNameSingular' => 'Linia matek', //Rekken av mødre
     'queenLinesNameLabel' => 'Skrócona nazwa',
     'queenLinesFullNameLabel' => 'Pełna nazwa',
     'queenLinesNameLabelShort' => 'Linia',
@@ -75,7 +99,9 @@ return [
     'updatedSuccess' => 'Zapisaliśmy ustawienia',
 
     'invoice' => [
+        'title' => 'Fakturowanie',
         'cardTitle' => 'Dane do faktury',
+        'cardSubTitle' => 'Możemy potrzebować danych Twojej firmy dla faktur wystawionych za zakupy wykonane w aplikacji. Dodatkowo dane używane są w dokumentach generowanych dla Twoich klientów.',
         'inputAddressStreetLabel' => 'Ulica',
         'inputAddressBuildingNumberLabel' => 'Numer budynku',
         'inputAddressApartmentNumberLabel' => 'Numer lokalu',
@@ -86,9 +112,27 @@ return [
         'inputVatNumberShortLabel' => 'NIP',
         'noInvoiceDataWarning' => 'Niekompletne dane do fakturowania',
         'nrbLabel' => 'Numer konta bankowego',
+        'is_exempt_from_tax' => 'Pasieka zwolniona podmiotowo z VAT',
+        'tax_exempt_title' => 'Zwolnienie podmiotowe z VAT',
+        'exempt_reason' => 'Podstawa zwolnienia',
+        'exempt_reason_on_invoice' => 'Podstawa zwolnienia podana na fakturze',
+        'exempt_reason_on_invoice_info' => 'Pozostaw puste jeżeli nie chcesz umieszczać podstawy prawnej na fakturze.',
+        'exemptReasonsType' => [
+            'company_type' => 'ze względu na rodzaj prowadzonej działalności (art. 43 ust 1 ustawy o VAT)',
+            'ordinance' => 'zwolnienie na mocy rozporządzenia Ministra Finansów (art. 82 ust 3 ustawy o VAT)',
+            'turnover_limit' => 'zwolnienie ze względu na nieprzekroczenie 200 000 PLN obrotu (art. 113 ust 1 i 9 ustawy o VAT)',
+            'other_legal' => 'inna podstawa prawna',
+        ],
+        'exemptReasonOnInvoice' => [
+            'company_type' => 'zwolnienie ze względu na zakres wykonywanych czynności (art. 43 ust. 1)',
+            'ordinance' => 'zwolnienie ze względu na szczegółowe przepisy (art. 82 ust. 3)',
+            'turnover_limit' => 'zwolnienie ze względu na nieprzekroczenie limitu wartości sprzedaży w ubiegłym roku podatkowym (art. 113 ust. 1 i 9)',
+            'other_legal' => '',
+        ],
     ],
     'contact' => [
         'cardTitle' => 'Dane kontaktowe',
+        'cardSubTitle' => 'Dane nieobowiązkowe, ale polecamy ich wypełnienie. Głównie korzystamy z nich w dokumentach powiązanych z Twoimi klientami.',
         'inputContactEmailLabel' => 'Email',
         'inputContactPhoneLabel' => 'Nr telefonu',
     ],
@@ -100,5 +144,9 @@ return [
             'cardSubTitle' => 'Wymagania co do pliku: rozmiar maksymalnie 500kB, format: png, jpg, jpeg.',
             'inputFile' => 'Wybierz plik',
         ],
-    ]
+    ],
+    'unions' => [
+        'addFilesDisabledInfo' => 'Dodawanie plików jest możliwe tylko dla istniejącego związku. Dodaj związek i przejdź do jego edycji aby dodać pliki.',
+        'unionFiles' => 'Dołączone pliki związku (:value)',
+    ],
 ];

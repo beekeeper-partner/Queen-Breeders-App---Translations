@@ -48,6 +48,7 @@ return [
         'missingMessage' => 'Nie można wygenerować przesyłki w e-nadawcy: :data.',
         'missingClientData' => 'dane adresata są niekompletne',
         'missingClient' => 'adresat niewybrany',
+        'missingClientPhone' => 'brakuje telefonu adresata',
     ],
     'editParcelModal' => [
         'cardTitle' => 'Edit parcel :parcelNumber',

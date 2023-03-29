@@ -12,7 +12,7 @@ return [
     'serieMaxCountLabel' => 'Expected count of queens',
     'fabAddNewSerieTooltip' => 'Add new serie',
     'newSerieInfoTitle' => 'What are series for in our application?',
-    'newSerieInfoDesc' => 'With series, you can plan better from the moment of moving larvae to the time when queens are born in the incubator. Created series are compared with sales prognosis based on your orders, giving you input about how many orders can you handle over the season.',
+    'newSerieInfoDesc' => 'With series, you can plan better from the moment of moving larvae to the time when queens are born in the incubator. Created series are compared with sales prognosis based on your orders, giving you input about how many orders can you handle over the season. <a href="https://partnerpszczelarza.pl/aplikacja-hodowcy/dokumentacja/hodowla/serie-hodowlane/" target="_blank">Read more in our documentation.</a>',
     'serieNameLabel' => 'Serie name',
     'manualEfficiencyLabel' => 'Use default efficiency set',
     'editSerieModalTitle' => 'Edit serie',
@@ -48,4 +48,16 @@ return [
     'day_born' => 'Born day',
     'allGoodText' => 'All good here! There is nothing to work on here today or all tasks were already completed',
 
+    'form' => [
+        'comment' => 'Comment',
+        'queen_mother_id' => 'Reproductive queen',
+        'queen_mother_id_info' => 'Choose reproductive queen from available ones to mark all queens born in this series as daughters. This will help you with keeping lineage settings in place.',
+        'is_excluded_from_statistics' => 'Exclude series from analytics',
+        'is_excluded_from_statistics_tooltip' => 'Excluded from analytics',
+        'is_excluded_from_statistics_info' => 'We will skip excluded series from analytics  obliczaniu uśrednionych wydajności. Polecamy wyłączenie ze statystyk pierwszych serii utworzonych w sezonie, gdyż mogą one mieć największy rozrzut w efektywności poszczególnych kroków.',
+    ],
+    'planning' => [
+        'dateInfo' => 'The dates represent when the first and last series of queens are born. We will calculate other dates for you.',
+        'expectedInfo' => 'Let us know how many queen bees you expect to have for sale for the created series. You can change the number for the selected series at any time.',
+    ],
 ];

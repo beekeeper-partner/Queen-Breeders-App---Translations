@@ -12,7 +12,7 @@ return [
     'serieMaxCountLabel' => 'Spodziewana ilość matek',
     'fabAddNewSerieTooltip' => 'Dodaj nową serię',
     'newSerieInfoTitle' => 'Do czego służą serie w aplikacji?',
-    'newSerieInfoDesc' => 'Dzięki seriom możesz lepiej zaplanować czynności od przenoszenia larw aż po wygryzanie się matek w inkubatorze. Serie są porównywane z prognozami sprzedażych przychodzącymi z zamówień klientów, dając Ci pogląd na to jak wiele zamówień możesz obsłużyć w danym okresie sezonu.',
+    'newSerieInfoDesc' => 'Dzięki seriom możesz lepiej zaplanować czynności od przenoszenia larw aż po wygryzanie się matek w inkubatorze. Serie są porównywane z prognozami sprzedażych przychodzącymi z zamówień klientów, dając Ci pogląd na to jak wiele zamówień możesz obsłużyć w danym okresie sezonu. <a href="https://partnerpszczelarza.pl/aplikacja-hodowcy/dokumentacja/hodowla/serie-hodowlane/" target="_blank">Przeczytaj więcej w naszej dokumentacji.</a>',
     'serieNameLabel' => 'Nazwa serii',
     'manualEfficiencyLabel' => 'Używaj domyślnych wydajności',
     'editSerieModalTitle' => 'Edytuj serię',
@@ -20,8 +20,9 @@ return [
     'endDateLabel' => 'Data końca sezonu',
     'addMultipleSerieSuccessMessage' => 'Pomyślnie dodano wiele serii',
     'addMultipleSeriesModalHivesPrefixLabel' => 'Prefiks nazwy serii',
-    'addMultipleSeriesModalTitle' => 'Dodaj wiele serii',
+    'addMultipleSeriesModalTitle' => 'Planowanie sezonu',
     'addMultipleSeriesModalInfoBoxTitle' => 'Podgląd tworzonych serii',
+    'noHivesInfoTitle' => 'Mamy jeszcze za mało danych.',
     'noHivesInfoBox' => 'Wypełnij daty startu i końca sezonu oraz nazwę, żeby zobaczyć przykłady tworzonych serii.',
     'saveOnlyThisSerieLabel' => 'Zmień tylko tę serię',
     'saveAllSeriesThisLabel' => 'Zmień również kolejne serie z listy',
@@ -48,4 +49,16 @@ return [
     'day_born' => 'Dzień wygryzania',
     'allGoodText' => 'Wszystko w porządku! Na dzisiaj nie ma tutaj zadań lub wszystkie zadania zostały wykonane.',
 
+    'form' => [
+        'comment' => 'Komentarz',
+        'queen_mother_id' => 'Matka reprodukcyjna',
+        'queen_mother_id_info' => 'Wybierz matkę reprodukucjną z aktywnych matek w Ewidencji hodowlanej aby przyłączyć do niej wszystkie matki urodzone z tej serii.',
+        'is_excluded_from_statistics' => 'Wyłącz serię ze statystyk',
+        'is_excluded_from_statistics_tooltip' => 'Wyłączona ze statystyk',
+        'is_excluded_from_statistics_info' => 'Seria wyłączona ze statystyk będzie pomijana przy obliczaniu uśrednionych wydajności. Polecamy wyłączenie ze statystyk pierwszych serii utworzonych w sezonie, gdyż mogą one mieć największy rozrzut w efektywności poszczególnych kroków.',
+    ],
+    'planning' => [
+        'dateInfo' => 'Wybierz daty w których chcesz aby wygryzła się pierwsza i ostatnia partia w sezonie. Pozostałe daty wyliczymy dla Ciebie automatycznie.',
+        'expectedInfo' => 'Wpisz liczbę spodziewanych matek pszczelich do sprzedaży dostępnych z każdej serii w sezonie. Później możesz zmienić to dla dowolnej serii.',
+    ],
 ];

@@ -1,6 +1,6 @@
 <?php
 return [
-    'appName' => 'Queen Breeders',
+    'appName' => 'Queen Bee Breeders App',
     'homeTitle' => 'Apiary state',
     'homeSubtitle' => 'Here you can see a brief overview of your apiary state. Use the queen line filter to get more specific information about current state and prognosis.',
     'warehousePageTitle' => 'Warehouse',

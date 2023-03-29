@@ -1,7 +1,8 @@
 <?php
 return [
     'nav' => [
-        'apiaryLabel' => 'Bigård',
+        'apiaryLabel' => 'Birgård',
+        'apiaryLogo' => 'Firma logo',
         'teamLabel' => 'Team',
         'queenLinesLabel' => 'Dronning linjer',
         'seasonsLabel' => 'Seasons',
@@ -12,9 +13,12 @@ return [
     ],
     'apiary' => [
         'cardTitle' => 'Bigårdsdetaljer',
+        'cardSubTitle' => "This is the data that you've entered on registration, feel free to change it if you need. Based on selected country we can propose you functionality more tailored for your needs. The apiary name can be also shorted here, as you can use full company name in Invoicing settings.",
     ],
     'efficiency' => [
+        'title' => 'Effektivitet',
         'cardTitle' => 'Effektivitetsinnstillinger',
+        'cardSubTitle' => 'Efficiency settings are used as a base value for prognoses in our application. Unless there is not enough historical data to use, default values from this settings are used.',
     ],
     'queenLines' => [
         'cardTitle' => 'Dronning linjer',
@@ -34,8 +38,28 @@ return [
         'deleteSuccessMessage' => 'Sesong :navn ble slettet.',
         'editModalTitle' => 'Rediger sesong :navn',
         'addModalTitle' => 'Legg til ny sesong',
+        'startingNumberHint' => 'Example: :value',
+        'queenNumbering' => [
+            'title' => 'Queen numbering for the season',
+            'titleShort' => 'Queen numbering',
+            'subtitle' => 'Application will automatically number queens that are born in your apiary. By default first queen added for current year will receive number 1/YEAR (example: 1/2023). Below you can set personalise prefix and number for queens born in the season.',
+        ],
+        'queen_series_starting_number' => 'Starting number',
+        'queen_series_prefix' => 'Queen number prefix',
+        'daysOff' => [
+            'title' => 'Days off',
+            'subtitle' => 'Add days off or days where shipment is not possible. Those days will be shown on calendar, giving you hint that this days should not be used for shipments. ',
+            'table' => [
+                'date' => 'Date',
+                'name' => 'Name of the day',
+                'saveChangesBtn' => 'Save changes',
+                'addNewBtn' => 'Add new day',
+            ],
+        ],
     ],
+    'queenLinesNameSingular' => 'Dronning linjer',
     'queenLinesNameLabel' => 'Dronning linjenavn',
+    'queenLinesFullNameLabel' => 'Fullt navn',
     'queenLinesNameLabelShort' => 'Linje',
     'allQueenLinesLabel' => 'Alle linje',
     'beeSubspeciesNameLabel' => 'Underart',
@@ -48,10 +72,16 @@ return [
     'a_m_carnica' => 'A. m. Krainer',
     'a_m_caucasica' => 'A. m. Kaukasisk',
     'a_m_ligustica' => 'A. m. ligustica',
+    'queen_lines' => [
+        'a_m_mellifera' => 'A. m. mellifera',
+        'a_m_carnica' => 'A. m. Krainer',
+        'a_m_caucasica' => 'A. m. Kaukasisk',
+        'a_m_ligustica' => 'A. m. ligustica',
+    ],
     'crossbreed' => 'Kryssning',
     'hybrid' => 'Hybrid',
-    'deleteQueenLineSuccessMessage' => 'Dronning linje :navn ble slettet',
-    'queenLineUpdateSuccessMessage' => 'Dronning linje :navnet ble oppdatert',
+    'deleteQueenLineSuccessMessage' => 'Dronning linje :name ble slettet',
+    'queenLineUpdateSuccessMessage' => 'Dronning linje :name ble oppdatert',
     'queenLineAddedSuccessMessage' => 'Dronning linje :navn ble lagt til',
     'addNewQueenLineBtnLabel' => 'Legg til ny dronninglinje',
     'deleteQueenLineTooltip' => 'Slett denne dronningslinjen',
@@ -67,9 +97,10 @@ return [
     'seriesEfficiencyHint' => 'Serieeffektivitet brukes for prognoseberegning - som startverdi.',
     'updatedSuccess' => 'Innstillingene ble oppdatert',
 
-
     'invoice' => [
+        'title' => 'Fakturering',
         'cardTitle' => 'Faktureringsdetaljer',
+        'cardSubTitle' => 'We need your invoicing data if you want to receive invoice for purchases in our application. Your company data will be also used in documents created for your customers.',
         'inputAddressStreetLabel' => 'Gate',
         'inputAddressBuildingNumberLabel' => 'Husnummer',
         'inputAddressApartmentNumberLabel' => 'Leilighet nummer',
@@ -80,10 +111,41 @@ return [
         'inputVatNumberShortLabel' => 'MVA',
         'noInvoiceDataWarning' => 'Faktureringsdata er ufullstendige',
         'nrbLabel' => 'Bank Konto',
+        'is_exempt_from_tax' => 'Apiary subjectively exempt from VAT',
+        'tax_exempt_title' => 'Subjective exemption from VAT',
+        'exempt_reason' => 'Legal basis of exemption',
+        'exempt_reason_on_invoice' => 'The legal basis for the exemption stated on the invoice',
+        'exempt_reason_on_invoice_info' => 'Leave blank if you do not want to include the legal basis on the invoice.',
+        'exemptReasonsType' => [
+            'company_type' => 'due to the type of activity (Article 43(1) of the VAT Act)',
+            'ordinance' => 'exemption under the Regulation of the Minister of Finance (Article 82(3) of the VAT Act)',
+            'turnover_limit' => 'exemption due to turnover not exceeding PLN 200,000 (Article 113 paragraphs 1 and 9 of the VAT Act)',
+            'other_legal' => 'other legal basis',
+        ],
+        'exemptReasonOnInvoice' => [
+            'company_type' => 'exemption due to the scope of performed activities (Article 43(1))',
+            'ordinance' => 'exemption due to specific provisions (Article 82(3))',
+            'turnover_limit' => 'exemption due to not exceeding the sales value limit in the previous tax year (Article 113 paragraphs 1 and 9)',
+            'other_legal' => '',
+        ],
     ],
     'contact' => [
         'cardTitle' => 'Kontaktinformasjon',
+        'cardSubTitle' => 'Your contact data is optional. We use it in many functionalities, especially in customer-related documents.',
         'inputContactEmailLabel' => 'E-Post',
         'inputContactPhoneLabel' => 'Telefon nummer',
-    ]
+    ],
+    'apiaryLogo' => [
+        'cardTitle' => 'Firma logo',
+        'cardSubTitle' => 'Du kan laste opp din tilpassede firmalogo. Vi kan bruke det i genererte pdf-filer og i applikasjonslayout.',
+        'uploadForm' => [
+            'cardTitle' => 'Last opp ny logo',
+            'cardSubTitle' => 'Filrestriksjoner: størrelse maks 500 kB, format: png, jpg, jpeg.',
+            'inputFile' => 'Velg fil',
+        ],
+    ],
+    'unions' => [
+        'addFilesDisabledInfo' => 'Adding files is possible only in edit mode. Please add union first and open it for editing to add files.',
+        'unionFiles' => 'Attached union files (:value)',
+    ],
 ];

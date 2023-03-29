@@ -31,4 +31,7 @@ return [
     'rejectInvitationSuccessMsg' => 'Odrzucono zaproszenie do pasieki.',
     'rejectInvitationErrorMsg' => 'Pojawiły się problemy przy odrzuceniu zaproszenia, spróbuj ponownie.',
     'addApiaryTitle' => 'Dodaj nową pasiekę',
+    'country' => [
+        'label' => 'Twój kraj'
+    ],
 ];

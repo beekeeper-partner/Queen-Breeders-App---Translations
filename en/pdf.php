@@ -1,6 +1,6 @@
 <?php
 return [
-    'footer_notice' => "The Beekeeper's Partner supports environmental protection by limiting waste produced. This page is an electronic document, do not print it unless you need it!",
+    'footer_notice' => "The Beekeeper's Partner supports environmental protection by limiting produced waste. This page is an electronic document, do not print it unless you need to!",
     'invoice' => [
         'header' => 'Invoice',
         'number' => 'No',

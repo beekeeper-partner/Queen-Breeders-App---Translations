@@ -13,9 +13,12 @@ return [
     ],
     'apiary' => [
         'cardTitle' => 'Apiary details',
+        'cardSubTitle' => "This is the data that you've entered on registration, feel free to change it if you need. Based on selected country we can propose you functionality more tailored for your needs. The apiary name can be also shorted here, as you can use full company name in Invoicing settings.",
     ],
     'efficiency' => [
+        'title' => 'Efficiency',
         'cardTitle' => 'Efficiency settings',
+        'cardSubTitle' => 'Efficiency settings are used as a base value for prognoses in our application. Unless there is not enough historical data to use, default values from this settings are used.',
     ],
     'queenLines' => [
         'cardTitle' => 'Queen Lines',
@@ -35,7 +38,26 @@ return [
         'deleteSuccessMessage' => 'Season :name was deleted successfully.',
         'editModalTitle' => 'Edit season :name',
         'addModalTitle' => 'Add new season',
+        'startingNumberHint' => 'Example: :value',
+        'queenNumbering' => [
+            'title' => 'Queen numbering for the season',
+            'titleShort' => 'Queen numbering',
+            'subtitle' => 'Application will automatically number queens that are born in your apiary. By default first queen added for current year will receive number 1/YEAR (example: 1/2023). Below you can set personalise prefix and number for queens born in the season.',
+        ],
+        'queen_series_starting_number' => 'Starting number',
+        'queen_series_prefix' => 'Queen number prefix',
+        'daysOff' => [
+            'title' => 'Days off',
+            'subtitle' => 'Add days off or days where shipment is not possible. Those days will be shown on calendar, giving you hint that this days should not be used for shipments. ',
+            'table' => [
+                'date' => 'Date',
+                'name' => 'Name of the day',
+                'saveChangesBtn' => 'Save changes',
+                'addNewBtn' => 'Add new day',
+            ],
+        ],
     ],
+    'queenLinesNameSingular' => 'Queen line',
     'queenLinesNameLabel' => 'Short name',
     'queenLinesFullNameLabel' => 'Full name',
     'queenLinesNameLabelShort' => 'Line',
@@ -76,7 +98,9 @@ return [
     'updatedSuccess' => 'Settings were updated successfully',
 
     'invoice' => [
+        'title' => 'Invoicing',
         'cardTitle' => 'Invoicing details',
+        'cardSubTitle' => 'We need your invoicing data if you want to receive invoice for purchases in our application. Your company data will be also used in documents created for your customers.',
         'inputAddressStreetLabel' => 'Street',
         'inputAddressBuildingNumberLabel' => 'Building number',
         'inputAddressApartmentNumberLabel' => 'Apartment number',
@@ -87,9 +111,27 @@ return [
         'inputVatNumberShortLabel' => 'VAT',
         'noInvoiceDataWarning' => 'Invoicing data incomplete',
         'nrbLabel' => 'Bank account',
+        'is_exempt_from_tax' => 'Apiary subjectively exempt from VAT',
+        'tax_exempt_title' => 'Subjective exemption from VAT',
+        'exempt_reason' => 'Legal basis of exemption',
+        'exempt_reason_on_invoice' => 'The legal basis for the exemption stated on the invoice',
+        'exempt_reason_on_invoice_info' => 'Leave blank if you do not want to include the legal basis on the invoice.',
+        'exemptReasonsType' => [
+            'company_type' => 'due to the type of activity (Article 43(1) of the VAT Act)',
+            'ordinance' => 'exemption under the Regulation of the Minister of Finance (Article 82(3) of the VAT Act)',
+            'turnover_limit' => 'exemption due to turnover not exceeding PLN 200,000 (Article 113 paragraphs 1 and 9 of the VAT Act)',
+            'other_legal' => 'other legal basis',
+        ],
+        'exemptReasonOnInvoice' => [
+            'company_type' => 'exemption due to the scope of performed activities (Article 43(1))',
+            'ordinance' => 'exemption due to specific provisions (Article 82(3))',
+            'turnover_limit' => 'exemption due to not exceeding the sales value limit in the previous tax year (Article 113 paragraphs 1 and 9)',
+            'other_legal' => '',
+        ],
     ],
     'contact' => [
         'cardTitle' => 'Contact details',
+        'cardSubTitle' => 'Your contact data is optional. We use it in many functionalities, especially in customer-related documents.',
         'inputContactEmailLabel' => 'Email',
         'inputContactPhoneLabel' => 'Phone number',
     ],
@@ -101,5 +143,9 @@ return [
             'cardSubTitle' => 'File restrictions: size max 500kB, format: png, jpg, jpeg.',
             'inputFile' => 'Choose file',
         ],
-    ]
+    ],
+    'unions' => [
+        'addFilesDisabledInfo' => 'Adding files is possible only in edit mode. Please add union first and open it for editing to add files.',
+        'unionFiles' => 'Attached union files (:value)',
+    ],
 ];

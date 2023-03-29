@@ -27,5 +27,6 @@ return [
         'team' => 'Team',
         'queenLines' => 'Queen Lines',
         'orders' => 'Orders',
+        'subscriptions' => 'Subscriptions'
     ]
 ];

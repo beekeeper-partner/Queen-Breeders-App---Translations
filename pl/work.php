@@ -1,7 +1,7 @@
 <?php
 return [
     'pageTitle' => 'Prace pasieczne',
-    'pageSubtitle' => 'Ten panel pozwala zarządzać codziennymi pracami w pasiece.',
+    'pageSubtitle' => 'Ten panel pozwala zarządzać codziennymi pracami w pasiece. Dodaj informacje o wygryzionych matkach czy ilości zamówionych matek, które trzeba dzisiaj zrealizować, aby usprawnić pracę Twojego zespołu i uaktualnić stany magazynowe.',
 
     //Modal
     'queenOrderTitle' => 'Matki do wybrania',

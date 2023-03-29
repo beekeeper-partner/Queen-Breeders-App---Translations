@@ -42,6 +42,7 @@ return [
     'addNewHiveNameLabel' => 'Wpisz nazwę ula',
     'newHiveModalTitle' => 'Dodaj nowy ul',
     'editHiveModalTitle' => 'Edytuj ul',
+    'editHivesModalTitle' => 'Edytuj ule',
     'newHiveInfoTitle' => 'Czym jest ul w naszej aplikacji?',
     'newHiveInfoDesc' => '<p class="mb-1 pl-3">Jako ul mamy na myśli jednostkę, w której hodowana jest
                                         pojedyncza matka pszczela.</p><p class="mb-1 pl-3">Jeżeli więc używasz uli
@@ -49,7 +50,9 @@ return [
     'addSingleHiveSuccessMessage' => 'Ul dodany pomyślnie! Możesz dodać kolejny lub zamknąć okno dodawania.',
     'addMultipleHiveSuccessMessage' => 'Ule dodano pomyślnie!',
     'editSingleHiveSuccessMessage' => 'Zapisaliśmy zmiany w ulu.',
+    'editMultipleHivesSuccessMessage' => 'Zapisaliśmy zmiany w ulach.',
     'deleteSingleHiveSuccessMessage' => 'Ul :hiveName został usunięty.',
+    'deleteMultipleHivesSuccessMessage' => 'Ule zostały usunięte.',
     'moveToWarehouseLabel' => 'Przenieś do magazynu',
     'moveHiveToWarehouseSuccessMessage' => 'Pomyślnie przeniesiono ul :hiveName do magazynu.',
     'saveAndMoveBtnLabel' => 'Zapisz i przenieś',
@@ -100,4 +103,6 @@ return [
     'queenBatchLabelShort' => 'Partia',
     'queenLineLabelShort' => 'Linia',
     'queenCycleLabelShort' => 'Cykl',
+
+    'selectedHives' => 'Zaznaczone ule: :value',
 ];

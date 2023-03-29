@@ -48,6 +48,9 @@ return [
         'missingMessage' => 'Nie można wygenerować przesyłki w e-nadawcy: :data.',
         'missingClientData' => 'dane adresata są niekompletne',
         'missingClient' => 'adresat niewybrany',
+        'missingClientPhone' => 'brakuje telefonu adresata',
+        'errorFromEnadawca' => 'Bład z e-nadawcy: :error. Popraw brakujące informacje i spróbuj ponownie.',
+        'dateNotSet' => 'data wysyłki nie jest ustawiona',
     ],
     'editParcelModal' => [
         'cardTitle' => 'Edytuj przesyłkę :parcelNumber',
@@ -56,7 +59,7 @@ return [
         'templateName' => 'Szablon',
         'defaultPackageDescription' => 'Matki pszczele',
         'cardTitle' => 'Szablony wysyłek',
-        'cardSubTitle' => 'Szablony wysyłek pozwalają na stworzenie wzorów wysyłek, które później można użyć w zamówieniach do szybkiego przygotowania wysyłki. W szablonach możesz zawrzeć domyślne wartości dla przesyłek Pocztex.',
+        'cardSubTitle' => 'Szablony wysyłek pozwalają na stworzenie wzorów wysyłek, których można później użyć w zamówieniach do szybkiego przygotowania wysyłki. W szablonach możesz zawrzeć domyślne wartości dla przesyłek Pocztex.',
         'noTemplatesText' => 'Brak zdefiniowanych szablonów, użyj przycisku poniżej aby stworzyć pierwszy.',
         'addBtnLabel' => 'Dodaj szablon wysyłki',
         'successfullyDeletedMsg' => 'Pomyślnie usunięto szablon wysyłek',
@@ -87,6 +90,7 @@ return [
             'tytulem_custom' => 'Wpisywany ręcznie',
             'tytulem_automatic_client_name' => 'Automatyczny: Imię i nazwisko klienta',
             'tytulem_automatic_order_number' => 'Automatyczny: Numer zamówienia',
+            'nrbInfo' => 'Numer rachunku bankowego powinien być rzeczywistym, istniejącym kontem bankowym.',
             'ubezpieczenieLabel' => 'Ubezpieczenie przesyłki',
             'ubezp_kwotaLabel' => 'Kwota ubezpieczenia',
             'zawartosc_specjalnaLabel' => 'Zawartość przesyłki',
@@ -106,5 +110,19 @@ return [
             'opisLabel' => 'Dodatkowy opis przesyłki',
             'opisHint' => 'Wpisz maksymalnie 40 znaków',
         ],
-    ]
+    ],
+    'daily' => [
+        'btnTooltip' => 'Zarządzaj buforami e-nadawcy',
+        'modal' => [
+            'title' => 'E-nadawca: aktywne bufory na dzień :day',
+        ],
+        'table' => [
+            'description' => 'Nazwa w e-nadawcy',
+            'shipment_date' => 'Data',
+            'created_at' => 'Utworzono',
+            'count' => 'Liczba wysyłek',
+            'closeBufforBtn' => 'Zamknij i wyślij zbiór',
+            'downloadStickersBtn' => 'Pobierz wszystkie etykiety',
+        ],
+    ],
 ];

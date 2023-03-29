@@ -1,6 +1,6 @@
 <?php
 return [
-    'initPageTitle' => 'Dronning oppdretter',
+    'initPageTitle' => 'Dronning oppdretter app',
     'initPageSubtitle' => 'Denne applikasjonen er laget for å hjelpe dronningoppdrettere i deres daglige arbeid. Du kan forutsi hvor mange dronninger du vil ha for salg, håndtere bestillinger fra kundene dine og administrere arbeidet til teamet ditt.',
     'setupApiaryStepperNameLabel' => 'Oppgi navnet til din Bigård',
     'setupApiaryStep1' => 'Oppgi navnet til din Bigård',
@@ -31,4 +31,7 @@ return [
     'rejectInvitationSuccessMsg' => 'Invitasjonen ble avslått.',
     'rejectInvitationErrorMsg' => 'Det oppsto et problem under utførelse av denne handlingen. Vær så snill, prøv på nytt.',
     'addApiaryTitle' => 'Legg til ny bigård',
+    'country' => [
+        'label' => 'Ditt land'
+    ],
 ];
