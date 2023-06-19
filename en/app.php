@@ -12,4 +12,7 @@ return [
     'invitations' => 'Awaiting invitations to other apiaries',
     'supportTeam_first_name' => 'Support',
     'supportTeam_last_name' => 'Team',
+    'helpers' => [
+        'newVersionAvailable' => '<strong>There is a new version available!</strong><br><br>Some functionalities need a refresh to work properly.'
+    ],
 ];

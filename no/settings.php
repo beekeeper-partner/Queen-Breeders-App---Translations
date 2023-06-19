@@ -49,6 +49,7 @@ return [
         'daysOff' => [
             'title' => 'Days off',
             'subtitle' => 'Add days off or days where shipment is not possible. Those days will be shown on calendar, giving you hint that this days should not be used for shipments. ',
+            'downloadPublicHolidays' => 'Import public holidays for :year',
             'table' => [
                 'date' => 'Date',
                 'name' => 'Name of the day',
@@ -128,6 +129,32 @@ return [
             'turnover_limit' => 'exemption due to not exceeding the sales value limit in the previous tax year (Article 113 paragraphs 1 and 9)',
             'other_legal' => '',
         ],
+        'descriptionType' => [
+            'title' => 'Automatic description in invoice',
+            'tooltip' => 'By default we are adding a description with queen line name to the product on the invoice. You can change the default behaviour here.',
+            'queen_line' => 'Queen line',
+            'none' => 'Disabled',
+        ],
+        'defaults' => [
+            'title' => 'Additional settings',
+            'dueDate' => [
+                'label' => 'Field: Due date',
+                'tooltip' => 'Due date tooltip',
+                '7' => '+7 days',
+                '14' => '+14 days',
+                '31' => '+1 month',
+            ],
+            'paid' => [
+                'label' => 'Field: Paid',
+                'tooltip' => 'By default paid is set to "Not paid". This setting may be overridden by information coming from the order.',
+                'not_paid' => 'Not paid',
+                'paid' => 'Paid',
+            ],
+            'paymentType' => [
+                'label' => 'Field: Payment type',
+                'tooltip' => 'By default payment type is set to empty. This setting may be overridden by information coming from the selected shipment in the order. Please check Settings > Orders > Shipments for more details.',
+            ],
+        ],
     ],
     'contact' => [
         'cardTitle' => 'Kontaktinformasjon',
@@ -147,5 +174,7 @@ return [
     'unions' => [
         'addFilesDisabledInfo' => 'Adding files is possible only in edit mode. Please add union first and open it for editing to add files.',
         'unionFiles' => 'Attached union files (:value)',
+        'showInactive' => 'Show inactive',
+        'ordersCount' => 'Orders count',
     ],
 ];

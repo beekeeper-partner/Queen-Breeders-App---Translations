@@ -23,11 +23,10 @@ return [
     'new' => 'New',
     'owner' => 'Owner',
     'noResults' => 'No results to show',
+    'noResultsForSelectedDay' => 'There are no results for selected day.',
     'partnerPszczelarzaURI' => 'https://partnerpszczelarza.pl',
-    'privacyPolicyURI' => 'https://partnerpszczelarza.pl/polityka-prywatnosci',
-    'privacyPolicy' => 'Privacy Policy',
     'today' => 'today',
-    'loadingDataMsg' => 'Loading data...',
+    'loadingDataMsg' => 'Loading data for you...',
     'continueBtnLabel' => 'Next step',
     'savencontinueBtnLabel' => 'Save and continue',
     'detailsBtnLabel' => 'Details',
@@ -63,4 +62,29 @@ return [
     'goToSubscriptionPageBtn' => 'Upgrade your account',
     'actionsLabel' => 'Actions',
     'orText' => 'or',
+    'links' => [
+        'documentation' => [
+            'text' => 'Documentation',
+            'href' => 'https://partnerpszczelarza.pl/aplikacja-hodowcy/dokumentacja/',
+        ],
+        'privacyPolicy' => [
+            'text' => 'Privacy Policy',
+            'href' => 'https://partnerpszczelarza.pl/polityka-prywatnosci',
+        ],
+    ],
+    'refreshBtn' => 'Refresh',
+
+    // time
+    'today' => 'today',
+    'thisWeek' => 'this week',
+    'thisMonth' => 'this month',
+    'thisYear' => 'this year',
+    'customDateRange' => 'custom dates',
+    'from' => 'from',
+    'to' => 'to',
+    'dataTable' => [
+        'allOptionLabel' => 'All',
+        'rowsPerPageLabel' => 'Rows per page',
+        'pageText' => '{0}-{1} of {2}',
+    ],
 ];

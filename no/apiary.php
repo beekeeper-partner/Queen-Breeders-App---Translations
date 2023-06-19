@@ -32,6 +32,7 @@ return [
     'rejectInvitationErrorMsg' => 'Det oppsto et problem under utførelse av denne handlingen. Vær så snill, prøv på nytt.',
     'addApiaryTitle' => 'Legg til ny bigård',
     'country' => [
-        'label' => 'Ditt land'
+        'label' => 'Ditt land',
+        'currency' => 'Your currency',
     ],
 ];

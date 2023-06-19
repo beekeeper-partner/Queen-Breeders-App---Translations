@@ -84,6 +84,7 @@ return [
     'queenAction_take_PB' => 'Ta potensielt avlsdronning',
     'queenAction_take_MQ' => 'Ta parret dronning',
     'queenAction_lost' => 'Dronning tapt',
+    'queenAction_lostCell' => 'Dronningcelle tapt',
 
     'filters_label' => 'Avlsstatus',
     'filters_state_mq' => 'Parret dronning',
@@ -98,4 +99,18 @@ return [
     'queenCycleLabelShort' => 'Syklus',
 
     'selectedHives' => 'Selected hives: :value',
+
+    'sections' => [
+        'moveEmptyHivesToWarehouse' => 'Move empty hives to warehouse',
+        'movingHivesSuccessfull' => 'Empty hives were moved to warehouse',
+
+    ],
+
+    'queen' => [
+        'type' => [
+            'label' => 'Added as',
+            'queen' => 'born queen',
+            'cell' => 'queen cell',
+        ]
+    ],
 ];

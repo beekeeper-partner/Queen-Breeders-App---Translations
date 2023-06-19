@@ -40,7 +40,7 @@ return [
                 <p><strong>Grupa po stronie ojcowskiej</strong> (<img class="small-gender-icon"
                                                                       src="https://hodowca.partnerpszczelarza.pl/images/icon/mdi/gender-male.png"
                                                                       width="15px"
-                                                                      height="15px">) - wpisać kolejny nr grupy u hodowcy/rok w którym prowadzono unasienianie, wpisac w zalaczeniu nr hodowlany, rase, linie, hodowcę** matek wchodzących w skład grupy</p>
+                                                                      height="15px">) - wpisać kolejny nr grupy u hodowcy/rok w którym prowadzono unasienianie, wpisac w zalaczeniu nr hodowlany, rasę, linię, hodowcę** matek wchodzących w skład grupy</p>
                 <p><strong>Grupa po stronie matecznej</strong> (<img class="small-gender-icon"
                                                                      src="https://hodowca.partnerpszczelarza.pl/images/icon/mdi/gender-female.png"
                                                                      width="15px"

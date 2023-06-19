@@ -15,4 +15,5 @@ return [
     'leftCountLabel' => 'Count of queens to be packed',
     'completedLabel' => 'Completed',
     'overallLabel' => 'overall',
+    'nullLabel' => 'no line',
 ];

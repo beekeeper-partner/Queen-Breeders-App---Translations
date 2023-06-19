@@ -15,4 +15,5 @@ return [
     'leftCountLabel' => 'Pozostało do spakowania',
     'completedLabel' => 'Skompletowane',
     'overallLabel' => 'łącznie',
+    'nullLabel' => 'bez linii',
 ];

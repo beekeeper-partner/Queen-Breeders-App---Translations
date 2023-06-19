@@ -7,9 +7,11 @@ return [
     'updateSuccessMessage' => 'Serie :name was updated successfully.',
     'transferredAtLabel' => 'Transfer of larvae date',
     'joinedAtLabel' => 'Joining date',
-    'isolatedAtLabel' => 'Isolation date',
+    'isolAtLabel' => 'Isolation date',
     'bornAtLabel' => 'Born date',
     'serieMaxCountLabel' => 'Expected count of queens',
+    'serieMaxCountLabelShort' => 'Expected count',
+    'serieMaxCountTooltip' => 'Enter the expected number of queens hatched from this serie. The expected quantity will appear in the forecasts on the order calendar.',
     'fabAddNewSerieTooltip' => 'Add new serie',
     'newSerieInfoTitle' => 'What are series for in our application?',
     'newSerieInfoDesc' => 'With series, you can plan better from the moment of moving larvae to the time when queens are born in the incubator. Created series are compared with sales prognosis based on your orders, giving you input about how many orders can you handle over the season. <a href="https://partnerpszczelarza.pl/aplikacja-hodowcy/dokumentacja/hodowla/serie-hodowlane/" target="_blank">Read more in our documentation.</a>',
@@ -22,6 +24,7 @@ return [
     'addMultipleSeriesModalHivesPrefixLabel' => 'Prefix of serie name',
     'addMultipleSeriesModalTitle' => 'Add multiple series',
     'addMultipleSeriesModalInfoBoxTitle' => 'Created series overview',
+    'noHivesInfoTitle' => 'Not enough data.',
     'noHivesInfoBox' => 'Fill the start and end date to see examples of created series.',
     'saveOnlyThisSerieLabel' => 'Change only this one',
     'saveAllSeriesThisLabel' => 'Change this and next series',
@@ -31,6 +34,19 @@ return [
 
     //Statistics
     'lostBornCountLabel' => 'Count of: lost during born',
+    'counts' => [
+        'born' => [
+            'label' => 'Born count',
+            'hint' => 'Already born: :value',
+            'tooltip' => 'You can save this field multiple times and it will add up to the queens born from this series',
+            'fullyBornSwitch' => 'Serie fully born',
+            'fullyBornInfo' => 'If checked, this serie will be marked as closed and fully born. There is still option to edit it from the Series panel.',
+        ],
+        'lost' => [
+            'hint' => 'Already lost: :value',
+            'tooltip' => 'You can save this field multiple times and it will add up to the queens lost int this series',
+        ]
+    ],
     'joinedCountLabel' => 'Count of: joined',
     'isolatedCountLabel' => 'Count of: isolated',
     'transferredCountLabel' => 'Count of: transferred larvae',
@@ -47,6 +63,9 @@ return [
     'day_isolated' => 'Isolation day',
     'day_born' => 'Born day',
     'allGoodText' => 'All good here! There is nothing to work on here today or all tasks were already completed',
+    'mathDontAddUpAlert' => 'Counts of isolated, born and lost are not matching. Closing the serie will mark left queens as lost.',
+    'queensInBatchesCount' => 'Reserved in batches',
+    'queensInBatchesCountLabel' => 'Count of reserved for batches',
 
     'form' => [
         'comment' => 'Comment',
@@ -57,7 +76,16 @@ return [
         'is_excluded_from_statistics_info' => 'We will skip excluded series from analytics  obliczaniu uśrednionych wydajności. Polecamy wyłączenie ze statystyk pierwszych serii utworzonych w sezonie, gdyż mogą one mieć największy rozrzut w efektywności poszczególnych kroków.',
     ],
     'planning' => [
+        'headline' => 'Planning',
         'dateInfo' => 'The dates represent when the first and last series of queens are born. We will calculate other dates for you.',
         'expectedInfo' => 'Let us know how many queen bees you expect to have for sale for the created series. You can change the number for the selected series at any time.',
+    ],
+    'modal' => [
+        'deleteBtnInfo' => 'There are queens already born for this serie. You can mark it as completed instead.'
+    ],
+    'status' => [
+        'completed' => [
+            'tooltip' => 'Serie completely born',
+        ],
     ],
 ];

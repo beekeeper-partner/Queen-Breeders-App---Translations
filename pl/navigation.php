@@ -10,14 +10,6 @@ return [
     'seriesLabel' => 'Serie hodowlane',
     'batchesLabel' => 'Partie matek',
     'breedingGroupLabel' => 'Hodowla',
-    'ordersGroupLabel' => 'Zamówienia',
-    'ordersLabel' => 'Lista zamówień',
-    'orderClientsLabel' => 'Klienci',
-    'ordersDailyLabel' => 'Wysyłki na dzień',
-    'ordersCalendarLabel' => 'Kalendarz',
-    'ordersShippingLabel' => 'Lista wysyłek',
-    'ordersSettingsLabel' => 'Ustawienia',
-    'ordersStatsLabel' => 'Statystyki',
     'focusModeLabel' => 'Tryb skupiony',
     'reportsGroupLabel' => 'Rozliczenia',
     'reportsUnionsLabel' => 'Związki pszczelarskie',
@@ -28,5 +20,14 @@ return [
         'queenLines' => 'Linie hodowlane',
         'orders' => 'Zamówienia',
         'subscriptions' => 'Subskrypcje'
-    ]
+    ],
+    'orders' => [
+        'group' => 'Zamówienia',
+        'summary' => 'Lista zamówień',
+        'calendar' => 'Kalendarz',
+        'daily' => 'Wysyłki na dzień',
+        'shipments' => 'Lista wysyłek',
+        'clients' => 'Klienci',
+        'analytics' => 'Analityka',
+    ],
 ];

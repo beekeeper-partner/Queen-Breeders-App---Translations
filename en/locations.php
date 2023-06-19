@@ -84,6 +84,7 @@ return [
     'queenAction_take_PB' => 'Take potentially breeding queen',
     'queenAction_take_MQ' => 'Take mated queen',
     'queenAction_lost' => 'Queen lost',
+    'queenAction_lostCell' => 'Queen cell lost',
 
     'filters_label' => 'Breeding status',
     'filters_state_mq' => 'Mated queen',
@@ -98,4 +99,15 @@ return [
     'queenCycleLabelShort' => 'Cycle',
 
     'selectedHives' => 'Selected hives: :value',
+    'sections' => [
+        'moveEmptyHivesToWarehouse' => 'Move empty hives to warehouse',
+        'movingHivesSuccessfull' => 'Empty hives were moved to warehouse',
+    ],
+    'queen' => [
+        'type' => [
+            'label' => 'Added as',
+            'queen' => 'born queen',
+            'cell' => 'queen cell',
+        ]
+    ],
 ];

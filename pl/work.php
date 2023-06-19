@@ -44,4 +44,19 @@ return [
     'queens_mq' => 'Matki potwierdzone przeglądami',
     'queens_pb' => 'Matki potencjalnie czerwiące',
     'queens_vq' => 'Matki nieunasienione',
+
+    'analytics' => [
+        'dailyQueenActions' => [
+            'title' => 'Aktywności w pasiece w dniu :day',
+            'subtitle' => 'Znajdziesz tutaj bieżące podsumowanie dziennych aktywności osób wykonujących prace w pasiece.',
+            'queens' => [
+                'title' => 'Akcje na matkach',
+                'added' => 'dodane',
+                'taken' => 'wybrane',
+                'lost' => 'utracone',
+                'left' => 'pozostawione',
+                'overall' => 'w sumie',
+            ],
+        ],
+    ]
 ];

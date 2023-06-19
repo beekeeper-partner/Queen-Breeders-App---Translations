@@ -115,6 +115,11 @@ return [
         'btnTooltip' => 'Zarządzaj buforami e-nadawcy',
         'modal' => [
             'title' => 'E-nadawca: aktywne bufory na dzień :day',
+            'buffers' => [
+                'default' => 'Bufor otwarty',
+                'error' => 'Bufor zamknięty z błędem lub nie zamknięty w naszej aplikacji - sprawdź szczegóły bufora bezpośrednio w enadawcy.',
+                'closed' => 'Bufor zamknięty',
+            ],
         ],
         'table' => [
             'description' => 'Nazwa w e-nadawcy',

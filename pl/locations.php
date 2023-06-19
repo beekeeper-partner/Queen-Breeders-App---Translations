@@ -91,6 +91,7 @@ return [
     'queenAction_take_PB' => 'Wybieram nieczerwiącą',
     'queenAction_take_MQ' => 'Wybieram czerwiącą',
     'queenAction_lost' => 'Matka utracona',
+    'queenAction_lostCell' => 'Matecznik utracony',
 
     'filters_label' => 'Stan unasienienia',
     'filters_state_mq' => 'Czerwiące',
@@ -105,4 +106,16 @@ return [
     'queenCycleLabelShort' => 'Cykl',
 
     'selectedHives' => 'Zaznaczone ule: :value',
+
+    'sections' => [
+        'moveEmptyHivesToWarehouse' => 'Przenieś puste ule do magazynu',
+        'movingHivesSuccessfull' => 'Puste ule przeniesiono do magazynu',
+    ],
+    'queen' => [
+        'type' => [
+            'label' => 'Dodana jako',
+            'queen' => 'wygryziona matka',
+            'cell' => 'matecznik',
+        ]
+    ],
 ];

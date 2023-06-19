@@ -44,4 +44,19 @@ return [
     'queens_mq' => 'Parrede dronninger',
     'queens_pb' => 'Potensielt avls dronninger',
     'queens_vq' => 'Jomfru dronninger',
+
+    'analytics' => [
+        'dailyQueenActions' => [
+            'title' => 'Daily activities in apiary for: :day',
+            'subtitle' => 'You can review daily activities of people working in the apiary.',
+            'queens' => [
+                'title' => 'Queens',
+                'added' => 'added',
+                'taken' => 'taken',
+                'lost' => 'mark as lost',
+                'left' => 'left in hive',
+                'overall' => 'overall',
+            ],
+        ],
+    ]
 ];

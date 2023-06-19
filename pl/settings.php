@@ -74,7 +74,7 @@ return [
     'a_m_caucasica' => 'kaukaska',
     'a_m_ligustica' => 'włoska',
     'queen_lines' => [
-        'a_m_mellifera' => 'Środkowoeuropejska',
+        'a_m_mellifera' => 'AMM',
         'a_m_carnica' => 'Krainka',
         'a_m_caucasica' => 'Kaukaska',
         'a_m_ligustica' => 'Włoska',
@@ -129,6 +129,33 @@ return [
             'turnover_limit' => 'zwolnienie ze względu na nieprzekroczenie limitu wartości sprzedaży w ubiegłym roku podatkowym (art. 113 ust. 1 i 9)',
             'other_legal' => '',
         ],
+        'descriptionType' => [
+            'title' => 'Automatyczny opis produktu w fakturach',
+            'tooltip' => 'Domyślnie dodajemy do opisu produktu w fakturach linię hodowlaną matek pszczelich.',
+            'queen_line' => 'Linia matek pszczelich określona w produkcie',
+            'chosen_queen_line' => 'Wybrana linia matek',
+            'none' => 'Wyłączone',
+        ],
+        'defaults' => [
+            'title' => 'Domyślne wartości',
+            'dueDate' => [
+                'label' => 'Pole: Data płatności',
+                'tooltip' => 'Domyślnie data płatności jest ustawiona na dzień wystawienia faktury.',
+                '7' => '+7 dni',
+                '14' => '+14 dni',
+                '31' => '+1 miesiąc',
+            ],
+            'paid' => [
+                'label' => 'Pole: Zapłacono',
+                'tooltip' => 'Domyślnie ustawiamy "Nie zapłacono" dla każdej nowej faktury. To ustawienie może być nadpisane przez informacje pochodzące z zamówienia.',
+                'not_paid' => 'Nie zapłacono',
+                'paid' => 'Zapłacono',
+            ],
+            'paymentType' => [
+                'label' => 'Pole: Typ płatności',
+                'tooltip' => 'Domyślnie typ płatności jest pusty. Pole typu płatności może zostać nadpisane przez dodanie wysyłki do faktury. Te ustawienia możesz zmienić w Ustawienia > Zamówienia > Metody wysyłki.',
+            ],
+        ],
     ],
     'contact' => [
         'cardTitle' => 'Dane kontaktowe',
@@ -148,5 +175,7 @@ return [
     'unions' => [
         'addFilesDisabledInfo' => 'Dodawanie plików jest możliwe tylko dla istniejącego związku. Dodaj związek i przejdź do jego edycji aby dodać pliki.',
         'unionFiles' => 'Dołączone pliki związku (:value)',
+        'showInactive' => 'Pokaż nieaktywne',
+        'ordersCount' => 'Liczba zamówień',
     ],
 ];

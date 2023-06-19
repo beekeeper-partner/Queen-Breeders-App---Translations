@@ -9,7 +9,9 @@ return [
     'joinedAtLabel' => 'Data komasacji',
     'isolatedAtLabel' => 'Data izolacji',
     'bornAtLabel' => 'Data wygryzienia',
-    'serieMaxCountLabel' => 'Spodziewana ilość matek',
+    'serieMaxCountLabel' => 'Spodziewana liczba matek',
+    'serieMaxCountLabelShort' => 'Spodz. liczba matek',
+    'serieMaxCountTooltip' => 'Wpisz spodziewaną ilość wygryzionych matek z tej serii. Spodziewana ilość pojawi się w prognozach w kalendarzu zamówień.',
     'fabAddNewSerieTooltip' => 'Dodaj nową serię',
     'newSerieInfoTitle' => 'Do czego służą serie w aplikacji?',
     'newSerieInfoDesc' => 'Dzięki seriom możesz lepiej zaplanować czynności od przenoszenia larw aż po wygryzanie się matek w inkubatorze. Serie są porównywane z prognozami sprzedażych przychodzącymi z zamówień klientów, dając Ci pogląd na to jak wiele zamówień możesz obsłużyć w danym okresie sezonu. <a href="https://partnerpszczelarza.pl/aplikacja-hodowcy/dokumentacja/hodowla/serie-hodowlane/" target="_blank">Przeczytaj więcej w naszej dokumentacji.</a>',
@@ -31,23 +33,39 @@ return [
     'defaultEfficiencyInfo' => 'Domyślnie serie korzystają z dynamicznej kalulacji skuteczności poszczególnych kroków. Jeżeli chcesz wymusić użycie domyślnych wartości, zaznacz tą opcję.',
 
     //Statistics
-    'lostBornCountLabel' => 'Ilość utraconych przy wygryzaniu',
-    'joinedCountLabel' => 'Ilość skomasowanych',
-    'isolatedCountLabel' => 'Ilość zaizolowanych',
-    'transferredCountLabel' => 'Ilość przełożonych larw',
-    'realCountLabel' => 'Rzeczywista ilość matek wygryzionych',
-    'prognosedCountLabel' => 'Prognozowana ilość matek wygryzionych',
+    'lostBornCountLabel' => 'Liczba utraconych przy wygryzaniu',
+    'counts' => [
+        'born' => [
+            'label' => 'Liczba zaznakowanych żywych',
+            'hint' => 'Obecnie zaznakowane: :value',
+            'tooltip' => 'Możesz wielokrotnie zapisywać wartość tego pola aby uzupełniać ilość wygryzionych matek.',
+            'fullyBornSwitch' => 'Seria wygryziona',
+            'fullyBornInfo' => 'Zaznaczenie tego pola spowoduje zamknięcie serii. Możesz dalej edytować serię z Panelu Serii.',
+        ],
+        'lost' => [
+            'hint' => 'Obecnie utracone: :value',
+            'tooltip' => 'Możesz wielokrotnie zapisywać wartość tego pola aby uzupełnić ilość utraconych matek w trakcie wygryzania.',
+        ]
+    ],
+    'joinedCountLabel' => 'Liczba skomasowanych',
+    'isolatedCountLabel' => 'Liczba zaizolowanych',
+    'transferredCountLabel' => 'Liczba przełożonych larw',
+    'realCountLabel' => 'Liczba zaznakowanych żywych matek',
+    'prognosedCountLabel' => 'Prognozowana liczba matek wygryzionych',
     'efficiencyLabel' => 'Skuteczność',
     'efficiencyJoinedLabel' => 'Skuteczność przyjęć',
 
     'workCardTitle' => 'Serie matek pszczelich',
     'workCardInfoTitle' => 'Do czego służy ten panel?',
-    'workCardSubTitle' => 'Jeżeli korzystasz z funkcjonalności serii matek pszczelich, w tej sekcji znajdą się serie, które w danym dniu będą wymagały akcji z Twojej strony. Wprowadzone dane będą używane do prognozowania ilości dostępnych matek.',
+    'workCardSubTitle' => 'Jeżeli korzystasz z funkcjonalności serii matek pszczelich, w tej sekcji znajdą się serie, które w danym dniu będą wymagały akcji z Twojej strony. Wprowadzone dane będą używane do prognozowania liczby dostępnych matek.',
     'day_transferred' => 'Dzień przekładania larw',
     'day_joined' => 'Dzień komasacji',
     'day_isolated' => 'Dzień izolowania',
     'day_born' => 'Dzień wygryzania',
     'allGoodText' => 'Wszystko w porządku! Na dzisiaj nie ma tutaj zadań lub wszystkie zadania zostały wykonane.',
+    'mathDontAddUpAlert' => 'Liczby zaizolowanych, wygryzionych i utraconych nie są zgodne. Zamknięcie serii spowoduje oznaczonie pozostałych matek jako utraconych.',
+    'queensInBatchesCount' => 'Zarezerwowane w partiach',
+    'queensInBatchesCountLabel' => 'Liczba zarezerowanych w partiach',
 
     'form' => [
         'comment' => 'Komentarz',
@@ -58,7 +76,16 @@ return [
         'is_excluded_from_statistics_info' => 'Seria wyłączona ze statystyk będzie pomijana przy obliczaniu uśrednionych wydajności. Polecamy wyłączenie ze statystyk pierwszych serii utworzonych w sezonie, gdyż mogą one mieć największy rozrzut w efektywności poszczególnych kroków.',
     ],
     'planning' => [
+        'headline' => 'Planowanie oraz wyniki',
         'dateInfo' => 'Wybierz daty w których chcesz aby wygryzła się pierwsza i ostatnia partia w sezonie. Pozostałe daty wyliczymy dla Ciebie automatycznie.',
         'expectedInfo' => 'Wpisz liczbę spodziewanych matek pszczelich do sprzedaży dostępnych z każdej serii w sezonie. Później możesz zmienić to dla dowolnej serii.',
+    ],
+    'modal' => [
+        'deleteBtnInfo' => 'Z tej serii istnieją już wygryzione matki. Możesz oznaczyć ją jako w pełni wygryzioną aby zakończyć jej edycję.'
+    ],
+    'status' => [
+        'completed' => [
+            'tooltip' => 'Seria wygryziona w pełni',
+        ],
     ],
 ];

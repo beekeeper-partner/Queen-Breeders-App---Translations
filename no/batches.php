@@ -7,6 +7,7 @@ return [
     'confirmedLabel' => 'bekreftet',
     'potentiallyBroodingLabel' => 'potensielt avl',
     'virginQueensLabel' => 'jomfru dronninger',
+    'cellQueensLabel' => 'queen cells',
     'nameLabel' => 'Batch navn',
     'daysOfLifeLabel' => 'Dager i livet',
     'cycleLengthLabel' => 'Sykluslengde',
@@ -23,8 +24,22 @@ return [
     'addSuccessMessage' => 'Ny batch ble lagt til.',
     'deleteSuccessMessage' => 'Batchen ble slettet.',
     'updateSuccessMessage' => 'Batch :name ble oppdatert.',
+    'modal' => [
+        'table' => [
+            'headline' => 'Limits for locations',
+            'locations' => 'Location',
+            'emptyHives' => 'Empty hives count',
+            'disposed' => 'Already disposed',
+            'limit' => 'Limit per location',
+        ],
+    ],
     'locationShortLabel' => 'plassering',
     'disposedShortLabel' => 'Avhendet',
     'limitShortLabel' => 'Grense',
     'emptyHives' => 'tomme bikuber',
+    'type' => [
+        'label' => 'Type',
+        'queen' => 'Born queens',
+        'cells' => 'Queen cells',
+    ],
 ];

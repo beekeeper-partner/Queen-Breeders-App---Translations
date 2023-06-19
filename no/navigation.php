@@ -10,14 +10,6 @@ return [
     'seriesLabel' => 'Dronning serien',
     'batchesLabel' => 'Dronning Batches',
     'breedingGroupLabel' => 'Oppdrett',
-    'ordersGroupLabel' => 'Ordrene',
-    'ordersLabel' => 'Sammendrag',
-    'orderClientsLabel' => 'Kunder',
-    'ordersDailyLabel' => 'Daglig arbeid',
-    'ordersCalendarLabel' => 'Kalender',
-    'ordersShippingLabel' => 'Forsendelser',
-    'ordersSettingsLabel' => 'Bestillingsinnstillinger',
-    'ordersStatsLabel' => 'Bestillingsstatistikk',
     'focusModeLabel' => 'Fokusmodus',
     'reportsGroupLabel' => 'Rapporter',
     'reportsUnionsLabel' => 'Birøkterforeningene',
@@ -28,5 +20,14 @@ return [
         'queenLines' => 'Queen Lines',
         'orders' => 'Ordrene',
         'subscriptions' => 'Subscriptions'
-    ]
+    ],
+    'orders' => [
+        'group' => 'Ordrene',
+        'summary' => 'Sammendrag',
+        'calendar' => 'Kalender',
+        'daily' => 'Daglig arbeid',
+        'shipments' => 'Forsendelser',
+        'clients' => 'Kunder',
+        'analytics' => 'Bestillingsstatistikk',
+    ],
 ];

@@ -20,6 +20,8 @@ return [
             'index' => 'Lp.',
         ],
         'noDataText' => 'Jeszcze nie mamy żadnych Twoich faktur. Dodaj pierwszą aby rozpocząć.',
+        'invoice_paid' => 'Faktura opłacona dnia: :date',
+        'invoice_not_paid' => 'Faktura oczekuje na płatność',
     ],
     'modal' => [
         'title_add' => 'Wystaw nową fakturę',
@@ -27,12 +29,17 @@ return [
         'saveSuccessMessage' => 'Faktura została pomyślnie dodana do zamówienia.',
         'saveBtnForEditedItemBlocked' => 'Dodaj tytuł, ilość, jednostki oraz cenę za jednostkę, żeby zapisać.',
         'deleteBtnInfo' => 'W naszej aplikacji istnieje kolejna, nowsza faktura, przez co ta nie może być usunięta.',
+        'paidAt' => [
+            'title' => 'Oznacz faktury jako opłacone',
+            'subtitle' => 'Wybierz datę płatności i zapisz zmiany dla faktur: :invoiceTitles. Faktury już oznaczone jako opłacone zostaną pominięte.',
+        ],
     ],
     'form' => [
         'number' => 'Numer faktury',
         'number_hint' => 'Numer faktury generujemy automatycznie na podstawie daty i poprzednio wystawionych faktur w naszym systemie. Jeżeli chcesz pominąć pewien numer przejdź do sekcji faktur w rozliczeniach i dodaj pustą fakturę. Zgodnie z art. 106e ust. 1 pkt 2 ustawy o VAT, faktura musi zawierać kolejny numer nadany w ramach jednej lub więcej serii, który w sposób jednoznaczny ją identyfikuje. Oznacza to, że możesz mieć jednocześnie wiele równoległych serii numeracji faktur, o ile pozwalają one na jednoznaczną identyfikację pojedynczej faktury.',
         'issued_at' => 'Wystawiono dnia',
         'sold_at' => 'Data sprzedaży',
+        'paid_at' => 'Data płatności',
         'number_short' => 'nr',
         'notes' => 'Uwagi',
         'payment_due_date' => 'Termin płatności',
@@ -84,4 +91,21 @@ return [
     ],
     'gross' => 'Brutto',
     'fileName' => 'Faktura',
+    'daily' => [
+        'btnTooltip' => 'Pobierz faktury z obecnego dnia',
+        'bulkFileName' => 'faktury_z_dnia_:day_pobrane_:created_at.pdf',
+        'errors' => [
+            'no_invoices_to_download' => 'Brak wygenerowanych faktur na ten dzień.'
+        ],
+        'markAsPaid' => 'Oznacz jako opłacone',
+    ],
+    'multibar' => [
+        'selectedCount' => 'Liczba wybranych faktur: :value',
+        'successMsg' => 'Wybrane faktury zostały pomyślnie uaktualnione',
+        'actions' => [
+            'label' => 'Wybierz akcję',
+            'markAsPaid' => 'Oznacz jako opłacone',
+            'contactUsWhatsapp' => 'Daj nam znać, jakich akcji tutaj brakuje (WhatsApp)',
+        ],
+    ],
 ];

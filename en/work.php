@@ -44,4 +44,19 @@ return [
     'queens_mq' => 'Mated queens',
     'queens_pb' => 'Potentially breeding queens',
     'queens_vq' => 'Virgin queens',
+
+    'analytics' => [
+        'dailyQueenActions' => [
+            'title' => 'Daily activities in apiary for: :day',
+            'subtitle' => 'You can review daily activities of people working in the apiary.',
+            'queens' => [
+                'title' => 'Queens',
+                'added' => 'added',
+                'taken' => 'taken',
+                'lost' => 'mark as lost',
+                'left' => 'left in hive',
+                'overall' => 'overall',
+            ],
+        ],
+    ]
 ];

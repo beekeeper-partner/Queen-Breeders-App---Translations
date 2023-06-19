@@ -12,6 +12,7 @@ return [
     'statsPageSubtitle' => 'Możesz tu sprawdzić statystyki zamówień',
     'settingsProductTitle' => 'Produkty',
     'settingsClubsTitle' => 'Koła pszczelarskie',
+    'settingsClubsSingleTitle' => 'Koło pszczelarskie',
     'settingsUnionsTitle' => 'Związki pszczelarskie',
     'settingsUnionsSingleTitle' => 'Związek pszczelarski',
     'settingsShippingTitle' => 'Metody wysyłki',
@@ -46,7 +47,8 @@ return [
     'unionUpdateSuccessMessage' => 'Pomyślnie zmieniono związek pszczelarski',
     'clubsCardSubtitle' => 'Lista kół pszczelarskich będzie wykorzystana w przypadku zamówień refundowanych. Możesz wprowadzić adres email aby wysyłać raporty bezpośrednio na adres koła.',
     'unionsCardSubtitle' => 'Lista związków pszczelarskich będzie wykorzystana w przypadku zamówień rozliczanych przez związki. Możesz wprowadzić adres email aby wysyłać raporty bezpośrednio na adres związku.',
-    'unions404Subtitle' => 'Lista związków pszczelarskich jest pusta, możesz dodać pierwszy wpis klikając w przycisk w prawym dolnym rogu.',
+    'unions404Subtitle' => 'Lista związków pszczelarskich jest pusta, możesz dodać pierwszy wpis klikając w przycisk w prawym dolnym rogu ekranu.',
+    'clubs404Subtitle' => 'Lista klubów pszczelarskich jest pusta, możesz dodać pierwszy wpis klikając w przycisk w prawym dolnym rogu ekranu.',
     'shipmentCardSubtitle' => 'Możesz zdefiniować wiele metod wysyłki, które później będą użyte przy tworzeniu zamówienia. Dla przykładu metodą wysyłki może być klasyczna paczka lub odbiór osobisty w wybranej lokalizacji.',
     'settingsProductsTitle' => 'Twoje produkty',
     'productsCardSubtitle' => 'Możesz zdefiniować wiele produktów w Twojej pasiece, będą one dostępne do wyboru na karcie zamówienia',
@@ -337,6 +339,7 @@ return [
         'set_short' => 'kpl.',
     ],
     'shipment' => [
+        'cost' => 'Koszt wysyłki',
         'payment_type' => 'Typ płatności',
         'payment_type_info' => 'Informacja o typie płatności pozwoli nam połączyć wysyłki z fakturami',
         'cannotDeleteInfo' => 'Dla tej wysyłki istnieją już zamówienia w naszym systemie, nie można jej więc usunąć. Jeżeli chcesz ją ukryć z dostępnych wysyłek, zaznacz przesyłkę jako nieaktywną.',
@@ -360,5 +363,89 @@ return [
             'subtitle' => 'Ogólne ustawienia dla modułu zamówień.',
             'order_numbering_format' => 'Format numerowania zamówienień',
         ],
+    ],
+    'icons' => [
+        'createdToday' => 'Dodane dzisiaj o :date',
+        'oneOfCreatedToday' => 'Jedna z przesyłek została dodana dzisiaj o :date',
+        'multipack' => [
+            'label' => 'Multipaczka dla :count wysyłek',
+            'confirmedByAll' => 'Wszystkie zgrupowane wysyłki są potwierdzone przez klienta',
+            'notConfirmed' => 'Jedna lub więcej wysyłek w grupie nie została potwierdzona przez klienta',
+            'allConfirmedByUnion' => 'Wszystkie zgrupowane wysyłki są potwierdzone przez związek',
+            'notAllConfirmedByUnion' => 'Jedna lub więcej wysyłek w grupie nie została potwierdzona przez związek',
+            'shipmentNumber' => 'Numery wysyłek:',
+            'invoiceNumbers' => 'Numery faktur:',
+        ],
+        'isPaid' => [
+            'onePaid' => 'Zamówienie opłacone',
+            'oneNotPaid' => 'Zamówienie nieopłacone',
+            'allPaid' => 'Wszystkie wysyłki opłacone',
+            'allNotPaid' => 'Jedna lub więcej wysyłek nie została opłacona',
+        ],
+    ],
+    'export' => [
+        'fileName' => 'wysylki_na_dzien_',
+        'generated' => 'wygenerowane_',
+        'btnTooltip' => 'Pobierz podsumowanie w pliku Excel',
+        'sheets' => [
+            'general' => 'Wysyłki',
+        ],
+        'type' => [
+            'label' => 'Typ zamówienia',
+            'refunded' => 'Refundowane',
+            'private' => 'Prywatne',
+        ],
+        'ups' => [
+            'first_name' => 'Imie',
+            'last_name' => 'Nazwisko',
+            'street' => 'ulica',
+            'postal_code' => 'kod',
+            'city' => 'miejscowosc',
+            'phone' => 'tel',
+            'email' => 'mail1',
+            'is_cash_on_delivery' => 'POBRANIE',
+            'cash_on_delivery_amount' => 'KWOTA',
+        ],
+    ],
+    'analytics' => [
+        'page' => [
+            'title' => 'Analityka dla zamówień',
+            'subtitle' => 'Poniżej możesz znaleźć podsumowania i dane analityczne Twoich zamówień. Napisz do nas jeżeli masz pomysł na dodanie brakujących statystyk na tej stronie.',
+        ],
+        'cards' => [
+            'counts' => [
+                'title' => 'Liczby wysyłek',
+                'all' => 'łącznie (razem z anulowanymi)',
+                'open' => '{0} aktywnych| {1} aktywna|[2,4] aktywne|[5,*] aktywnych',
+                'open_without_shipment_date' => '{0} aktywnych (bez ustalonej daty wysyłki)| {1} aktywna (bez ustalonej daty wysyłki)|[2,4] aktywne (bez ustalonej daty wysyłki)|[5,*] aktywnych (bez ustalonej daty wysyłki)',
+                'prepared' => '{0} przygotowanych do wysyłki|{1} przygotowana do wysyłki|[2,4] przygotowane do wysyłki|[5,*] przygotowanych do wysyłki',
+                'completed' => '{0} skompletowanych|{1} skompletowana|[2,4] skompletowane|[5,*] skompletowanych',
+                'paid' => '[0,4] oznaczone jako opłacone|[5,*] oznaczonych jako opłacone',
+                'cancelled' => '{0} anulowanych|{1} anulowana|[2,4] anulowane|[5,*] anulowanych',
+                'private' => '{0} prywatnych|{1} prywatna|[2,4] prywatne|[5,*] prywatnych',
+                'refunded' => '{0} refundowanych|{1} refundowana|[2,4] refundowane|[5,*] refundowanych',
+            ],
+            'sums' => [
+                'title' => 'Wartości wysyłek',
+                'all' => 'łącznie (bez anulowanych)',
+            ],
+            'productCounts' => [
+                'title' => 'Zamówione produkty',
+                'subtitle' => 'Poniżej możesz przejrzeć podsumowanie zamówionych produktów wraz z informacją o stosunku wysłanych do wszystkich.',
+            ],
+        ],
+        'wip' => [
+            'title' => "Budujemy tą stronę dla Ciebie!",
+            'subtitle' => "Tylko Ty wiesz jakie dane mogą być dla Ciebie interesujące! Daj nam znać czego tutaj brakuje.",
+            'whatsapp' => "Napisz do nas na whatsapp",
+            'email' => "Skontaktuj się przez e-mail",
+            'emailSubject' => "Chcę zobaczyć coś nowego na stronie analityki zamówień",
+        ],
+    ],
+    'daily' => [
+        'forgotten' => [
+            'title' => 'Nie zapomnij o nas!',
+            'subtitle' => "Poniżej znajdziesz listę niewysłanych przesyłek z poprzednich dni. Przejrzyj listę i uaktualnij zamówienia aby odzwierciedlić aktualny stan.",
+        ]
     ],
 ];

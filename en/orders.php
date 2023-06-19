@@ -12,6 +12,7 @@ return [
     'statsPageSubtitle' => 'You can check your orders statistics here',
     'settingsProductTitle' => 'Your products',
     'settingsClubsTitle' => 'Beekeeping clubs',
+    'settingsClubsSingleTitle' => 'Beekeeping club',
     'settingsUnionsTitle' => 'Beekeeping unions',
     'settingsUnionsSingleTitle' => 'Beekeeping union',
     'settingsShippingTitle' => 'Shipment methods',
@@ -46,7 +47,8 @@ return [
     'unionUpdateSuccessMessage' => 'Union updated successfully',
     'clubsCardSubtitle' => 'Beekeeping clubs are used in case when client order is processed within beekeeping club. Each club can be assign to an union.',
     'unionsCardSubtitle' => 'Beekeeping unions are used in case when client order is processed within beekeeping union.',
-    'unions404Subtitle' => 'The list is empty, you can add first entry by clicking on a button in the bottom right corner.',
+    'unions404Subtitle' => 'The list is empty, you can add first entry by clicking on a button in the bottom right corner of the screen.',
+    'clubs404Subtitle' => 'The list is empty, you can add first entry by clicking on a button in the bottom right corner of the screen.',
     'shipmentCardSubtitle' => 'You can specify multiple shipment methods for your order. For example you can add classic postal shipment or pickup in location.',
     'settingsProductsTitle' => 'Your products',
     'productsCardSubtitle' => 'You can specify multiple products that will be available in your apiary.',
@@ -337,11 +339,13 @@ return [
         'set_short' => 'set',
     ],
     'shipment' => [
+        'cost' => 'Shipment cost',
         'payment_type' => 'Payment type',
         'payment_type_info' => 'Information about payment type can help us to connect this shipment with our invoicing functionality.',
         'cannotDeleteInfo' => 'We cannot delete this shipment as there are existing orders in our system. Please deactivate it if you want to hide it from future orders.',
     ],
     'paymentTypes' => [
+        'title' => 'Payment type',
         'null' => '--',
         'cash' => 'Cash',
         'cash_on_delivery' => 'Cash on delivery',
@@ -359,5 +363,91 @@ return [
             'subtitle' => 'Here you can find some general settings for your orders module.',
             'order_numbering_format' => 'Orders numbering format',
         ],
+    ],
+    'icons' => [
+        'createdToday' => 'Created today at :date',
+        'oneOfCreatedToday' => 'One of the shipments freshly created today at :date',
+        'multipack' => [
+            'label' => 'Multipack for :count shipments',
+            'confirmedByAll' => 'All shipments confirmed with client',
+            'notConfirmed' => 'One or more shipments in group are not confirmed with client',
+            'allConfirmedByUnion' => 'All shipments in group were confirmed by union',
+            'notAllConfirmedByUnion' => 'One or more shipments in group are not confirmed by union',
+            'shipmentNumber' => 'Shipment numbers:',
+            'invoiceNumbers' => 'Invoice numbers:',
+        ],
+        'isPaid' => [
+            'onePaid' => 'Order is paid',
+            'oneNotPaid' => 'Order is not paid',
+            'allPaid' => 'All shipments are paid',
+            'allNotPaid' => 'One or more shipment is not paid',
+        ],
+    ],
+    'export' => [
+        'fileName' => 'shipments_for_',
+        'generated' => 'generated_at_',
+        'btnTooltip' => 'Download summary in excel file',
+        'sheets' => [
+            'general' => 'Shipments',
+            'worldship' => 'UPS WorldShip',
+        ],
+        'type' => [
+            'refunded' => 'Refunded',
+            'private' => 'Private',
+        ],
+        'ups' => [
+            'first_name' => 'Imie',
+            'last_name' => 'Nazwisko',
+            'street' => 'ulica',
+            'postal_code' => 'kod',
+            'city' => 'miejscowosc',
+            'phone' => 'tel',
+            'email' => 'mail1',
+            'is_cash_on_delivery' => 'POBRANIE',
+            'cash_on_delivery_amount' => 'KWOTA',
+        ],
+    ],
+    'analytics' => [
+        'page' => [
+            'title' => 'Analytics for orders',
+            'subtitle' => 'Below you can find summaries for your orders in selected season. Let us know if there is a specific dataset that you would like to see here.',
+        ],
+        'cards' => [
+            'counts' => [
+                'title' => 'Summary of shipment counts',
+                'all' => 'overall (with cancelled)',
+                'open' => 'open',
+                'open_without_shipment_date' => 'open (without shipment date specified)',
+                'prepared' => 'prepared',
+                'completed' => 'completed',
+                'cancelled' => 'cancelled',
+                'paid' => 'marked as paid',
+                'private' => 'private',
+                'refunded' => 'refunded',
+//                'all' => '{0} overall (with |{1} potwierdzona przeglądem|[2,4] potwierdzone przeglądami|[5,*] potwierdzonych przeglądami',
+            ],
+            'sums' => [
+                'title' => 'Sums of shipment values',
+                'all' => 'overall (without cancelled)',
+            ],
+            'productCounts' => [
+                'title' => 'Ordered product counts',
+                'subtitle' => 'Here you can review counts of ordered products for selected season. Below you can find completed to overall ratio.',
+            ],
+        ],
+        'wip' => [
+            'title' => "We're building this section for you!",
+            'subtitle' => "Only you know what data might be interesting for you! Please let us know what we should add here.",
+            'whatsapp' => "Contact us on whatsapp",
+            'email' => "Contact us via email",
+            'emailSubject' => "I want to see something else on Orders Analytics page",
+        ],
+
+    ],
+    'daily' => [
+        'forgotten' => [
+            'title' => 'Have you forgotten me?',
+            'subtitle' => "Below is a list of shipments from previous days that weren't closed. Please review the list and correct the status of the shipment where needed.",
+        ]
     ],
 ];

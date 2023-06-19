@@ -15,4 +15,5 @@ return [
     'leftCountLabel' => 'Antall dronninger som skal pakkes',
     'completedLabel' => 'Fullført',
     'overallLabel' => 'alt i alt',
+    'nullLabel' => 'no line',
 ];

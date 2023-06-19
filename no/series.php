@@ -10,6 +10,8 @@ return [
     'isolatedAtLabel' => 'Isolasjonsdato',
     'bornAtLabel' => 'Født dato',
     'serieMaxCountLabel' => 'Forventet antall dronninger',
+    'serieMaxCountLabelShort' => 'Expected count',
+    'serieMaxCountTooltip' => 'Enter the expected number of queens hatched from this serie. The expected quantity will appear in the forecasts on the order calendar.',
     'fabAddNewSerieTooltip' => 'Legg til ny serie',
     'newSerieInfoTitle' => 'Hva er serier for i vår applikasjon?',
     'newSerieInfoDesc' => 'Med serier kan du planlegge bedre fra det øyeblikket larver flyttes til det tidspunktet da dronninger blir født i klekkeskapet. Opprettede serier sammenlignes med salgsprognose basert på dine bestillinger, og gir deg innspill om hvor mange bestillinger du kan håndtere i løpet av sesongen. <a href="https://partnerpszczelarza.pl/aplikacja-hodowcy/dokumentacja/hodowla/serie-hodowlane/" target="_blank">Read more in our documentation.</a>',
@@ -22,6 +24,7 @@ return [
     'addMultipleSeriesModalHivesPrefixLabel' => 'Prefiks for serienavn',
     'addMultipleSeriesModalTitle' => 'Legg til flere serier',
     'addMultipleSeriesModalInfoBoxTitle' => 'Laget serieoversikt',
+    'noHivesInfoTitle' => 'Not enough data.',
     'noHivesInfoBox' => 'Fyll inn start- og sluttdatoen for å se eksempler på opprettede serier.',
     'saveOnlyThisSerieLabel' => 'Endre kun denne',
     'saveAllSeriesThisLabel' => 'Endre denne og neste serie',
@@ -31,6 +34,19 @@ return [
 
     //Statistics
     'lostBornCountLabel' => 'Antall: mistet under fødselen',
+    'counts' => [
+        'born' => [
+            'label' => 'Born count',
+            'hint' => 'Already born: :value',
+            'tooltip' => 'You can save this field multiple times and it will add up to the queens born from this series',
+            'fullyBornSwitch' => 'Serie fully born',
+            'fullyBornInfo' => 'If checked, this serie will be marked as closed and fully born. There is still option to edit it from the Series panel.',
+        ],
+        'lost' => [
+            'hint' => 'Already lost: :value',
+            'tooltip' => 'You can save this field multiple times and it will add up to the queens lost int this series',
+        ]
+    ],
     'joinedCountLabel' => 'Antall: sluttet seg til',
     'isolatedCountLabel' => 'Antall: isolert',
     'transferredCountLabel' => 'Antall: overførte larver',
@@ -47,6 +63,9 @@ return [
     'day_isolated' => 'Isolasjonsdag',
     'day_born' => 'Fødselsdag',
     'allGoodText' => 'Alt bra her! Det er ingenting å jobbe med her i dag eller alle oppgavene var allerede fullført',
+    'mathDontAddUpAlert' => 'Counts of isolated, born and lost are not matching. Closing the serie will mark left queens as lost.',
+    'queensInBatchesCount' => 'Reserved in batches',
+    'queensInBatchesCountLabel' => 'Count of reserved for batches',
 
     'form' => [
         'comment' => 'Comment',
@@ -57,8 +76,16 @@ return [
         'is_excluded_from_statistics_info' => 'We will skip excluded series from analytics  obliczaniu uśrednionych wydajności. Polecamy wyłączenie ze statystyk pierwszych serii utworzonych w sezonie, gdyż mogą one mieć największy rozrzut w efektywności poszczególnych kroków.',
     ],
     'planning' => [
+        'headline' => 'Planning',
         'dateInfo' => 'The dates represent when the first and last series of queens are born. We will calculate other dates for you.',
         'expectedInfo' => 'Let us know how many queen bees you expect to have for sale for the created series. You can change the number for the selected series at any time.',
     ],
-
+    'modal' => [
+        'deleteBtnInfo' => 'There are queens already born for this serie. You can mark it as completed instead.'
+    ],
+    'status' => [
+        'completed' => [
+            'tooltip' => 'Serie completely born',
+        ],
+    ],
 ];

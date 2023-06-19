@@ -23,11 +23,10 @@ return [
     'new' => 'Nowy',
     'owner' => 'Założyciel',
     'noResults' => 'Brak wyników',
+    'noResultsForSelectedDay' => 'Nie mamy jeszcze danych dla wybranego dnia.',
     'partnerPszczelarzaURI' => 'https://partnerpszczelarza.pl',
-    'privacyPolicyURI' => 'https://partnerpszczelarza.pl/polityka-prywatnosci',
-    'privacyPolicy' => 'Polityka Prywatności',
     'today' => 'dzisiaj',
-    'loadingDataMsg' => 'Ładujemy dane...',
+    'loadingDataMsg' => 'Ładujemy dane dla Ciebie...',
     'continueBtnLabel' => 'Przejdź dalej',
     'savencontinueBtnLabel' => 'Zapisz i kontynuuj',
     'detailsBtnLabel' => 'Szczegóły',
@@ -63,4 +62,29 @@ return [
     'goToSubscriptionPageBtn' => 'Ulepsz swoje konto',
     'actionsLabel' => 'Akcje',
     'orText' => 'lub',
+    'links' => [
+        'documentation' => [
+            'text' => 'Dokumentacja',
+            'href' => 'https://partnerpszczelarza.pl/aplikacja-hodowcy/dokumentacja/',
+        ],
+        'privacyPolicy' => [
+            'text' => 'Polityka Prywatności',
+            'href' => 'https://partnerpszczelarza.pl/polityka-prywatnosci',
+        ],
+    ],
+    'refreshBtn' => 'Odśwież',
+
+    // time
+    'today' => 'dzisiaj',
+    'thisWeek' => 'w tym tygodniu',
+    'thisMonth' => 'w tym miesiącu',
+    'thisYear' => 'w tym roku',
+    'customDateRange' => 'własny zakres',
+    'from' => 'od',
+    'to' => 'do',
+    'dataTable' => [
+        'allOptionLabel' => 'Wszystkie',
+        'rowsPerPageLabel' => 'Ilość wyników',
+        'pageText' => '{0}-{1} z {2}',
+    ],
 ];

@@ -12,4 +12,7 @@ return [
     'invitations' => 'Oczekujące zaproszenia do innych pasiek',
     'supportTeam_first_name' => 'Zespół',
     'supportTeam_last_name' => 'Wsparcia Aplikacji',
+    'helpers' => [
+        'newVersionAvailable' => '<strong>Pojawiła się nowa wersja aplikacji!</strong><br><br>Niektóre funkcjonalności mogą wymagać odświeżenia, aby działać poprawnie.'
+    ],
 ];

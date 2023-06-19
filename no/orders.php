@@ -12,6 +12,7 @@ return [
     'statsPageSubtitle' => 'Du kan sjekke ordrestatistikken din her',
     'settingsProductTitle' => 'Dine produkter',
     'settingsClubsTitle' => 'Birøkterklubber',
+    'settingsClubsSingleTitle' => 'Birøkterklubber',
     'settingsUnionsTitle' => 'Birøkterlag',
     'settingsUnionsSingleTitle' => 'Birøkterforeningen',
     'settingsShippingTitle' => 'Forsendelsesmetoder',
@@ -47,6 +48,7 @@ return [
     'clubsCardSubtitle' => 'Birøkterklubber brukes i tilfelle kundeordre behandles i birøkterklubben. Hver klubb kan tildeles en forbund',
     'unionsCardSubtitle' => 'Birøkterforeninger benyttes i tilfelle kundeordre behandles innenfor birøkterforbundet.',
     'unions404Subtitle' => 'Listen er tom, du kan legge til første oppføring ved å klikke på en knapp nederst i høyre hjørne.',
+    'clubs404Subtitle' => 'Listen er tom, du kan legge til første oppføring ved å klikke på en knapp nederst i høyre hjørne.',
     'shipmentCardSubtitle' => 'Du kan spesifisere flere forsendelsesmetoder for bestillingen din. Du kan for eksempel legge til klassisk postforsendelse eller henting på stedet.',
     'productNameLabel' => 'Produkt navn',
     'productCodeLabel' => 'Product kode',
@@ -317,11 +319,13 @@ return [
         'set_short' => 'set',
     ],
     'shipment' => [
+        'cost' => 'Shipment cost',
         'payment_type' => 'Payment type',
         'payment_type_info' => 'Information about payment type can help us to connect this shipment with our invoicing functionality.',
         'cannotDeleteInfo' => 'We cannot delete this shipment as there are existing orders in our system. Please deactivate it if you want to hide it from future orders.',
     ],
     'paymentTypes' => [
+        'title' => 'Payment type',
         'null' => '--',
         'cash' => 'Cash',
         'cash_on_delivery' => 'Cash on delivery',
@@ -339,5 +343,74 @@ return [
             'subtitle' => 'Here you can find some general settings for your orders module.',
             'order_numbering_format' => 'Orders numbering format',
         ],
+    ],
+    'icons' => [
+        'createdToday' => 'Created today at :date',
+        'oneOfCreatedToday' => 'One of the shipments freshly created today at :date',
+        'multipack' => [
+            'label' => 'Multipack for :count shipments',
+            'confirmedByAll' => 'All shipments confirmed',
+            'notConfirmed' => 'One or more shipments in group are not confirmed',
+            'allConfirmedByUnion' => 'All shipments in group were confirmed by union',
+            'notAllConfirmedByUnion' => 'One or more shipments in group are not confirmed by union',
+            'shipmentNumber' => 'Shipment numbers:',
+            'invoiceNumbers' => 'Invoice numbers:',
+
+        ]
+    ],
+    'export' => [
+        'fileName' => 'shipments_for_',
+        'generated' => 'generated_at_',
+        'btnTooltip' => 'Download summary in excel file',
+        'sheets' => [
+            'general' => 'Shipments',
+        ],
+        'type' => [
+            'refunded' => 'Refunded',
+            'private' => 'Private',
+        ]
+    ],
+    'analytics' => [
+        'page' => [
+            'title' => 'Analytics for orders',
+            'subtitle' => 'Below you can find summaries for your orders in selected season. Let us know if there is a specific dataset that you would like to see here.',
+        ],
+        'cards' => [
+            'counts' => [
+                'title' => 'Summary of shipment counts',
+                'all' => 'overall (with cancelled)',
+                'open' => 'open',
+                'open_without_shipment_date' => 'open (without shipment date specified)',
+                'prepared' => 'prepared',
+                'completed' => 'completed',
+                'cancelled' => 'cancelled',
+                'paid' => 'marked as paid',
+                'private' => 'private',
+                'refunded' => 'refunded',
+//                'all' => '{0} overall (with |{1} potwierdzona przeglądem|[2,4] potwierdzone przeglądami|[5,*] potwierdzonych przeglądami',
+            ],
+            'sums' => [
+                'title' => 'Sums of shipment values',
+                'all' => 'overall (without cancelled)',
+            ],
+            'productCounts' => [
+                'title' => 'Ordered product counts',
+                'subtitle' => 'Here you can review counts of ordered products for selected season. Below you can find completed to overall ratio.',
+            ],
+        ],
+        'wip' => [
+            'title' => "We're building this section for you!",
+            'subtitle' => "Only you know what data might be interesting for you! Please let us know what we should add here.",
+            'whatsapp' => "Contact us on whatsapp",
+            'email' => "Contact us via email",
+            'emailSubject' => "I want to see something else on Orders Analytics page",
+        ],
+
+    ],
+    'daily' => [
+        'forgotten' => [
+            'title' => 'Have you forgotten me?',
+            'subtitle' => "Below is a list of shipments from previous days that weren't closed. Please review the list and correct the status of the shipment where needed.",
+        ]
     ],
 ];

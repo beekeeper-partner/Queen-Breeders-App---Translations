@@ -43,6 +43,7 @@ return [
         'queen_father_id' => 'Paternal side',
         'queen_mother_expand' => ':name (:registryName)',
         'queen_mother_id' => 'Mother side',
+        'queen_mother_id_for_series' => 'Reproductive queen (mother side)',
         'queen_source' => 'Source',
         'queen_source_short' => 'Source',
         'queen_source_name' => 'Breeder name',
@@ -56,6 +57,7 @@ return [
         'group' => 'Group',
         'is_alive' => 'Is alive',
         'is_alive_info' => 'This setting can help us track queen bees that left your apiary as a living queen. Based on this information we will generate statistics about queens lost during breeding.',
+        'year' => 'Year',
     ],
     'sections' => [
         'general' => 'General',
@@ -80,6 +82,7 @@ return [
         'main' => 'Main',
     ],
     'herdBookEntryTypeShort' => [
+        '' => '',
         'null' => '',
         'draft' => 'W',
         'main' => 'G',
@@ -113,5 +116,17 @@ return [
         'general_info' => 'Queen bees in stock will be visible in the orders stock and can be attached to the selected order. You can find queens visible in the apiary in the current state of the apiary.',
         'apiary' => 'Apiary',
         'stock' => 'Stock',
+    ],
+    'date' => [
+        'label' => 'Date'
+    ],
+    'multibar' => [
+        'selectedCount' => 'Selected queens: :value',
+        'successMsg' => 'Selected queens were updated successfully',
+        'actions' => [
+            'label' => 'Select action',
+            'makeLost' => 'Mark as lost',
+            'contactUsWhatsapp' => 'Tell us more what you want to see here (WhatsApp chat)',
+        ],
     ],
 ];

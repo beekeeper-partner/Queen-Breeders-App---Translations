@@ -32,6 +32,7 @@ return [
     'rejectInvitationErrorMsg' => 'Pojawiły się problemy przy odrzuceniu zaproszenia, spróbuj ponownie.',
     'addApiaryTitle' => 'Dodaj nową pasiekę',
     'country' => [
-        'label' => 'Twój kraj'
+        'label' => 'Twój kraj',
+        'currency' => 'Waluta używana w aplikacji',
     ],
 ];

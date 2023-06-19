@@ -7,6 +7,7 @@ return [
     'confirmedLabel' => 'confirmed',
     'potentiallyBroodingLabel' => 'potentially breeding',
     'virginQueensLabel' => 'virgin queens',
+    'cellQueensLabel' => 'queen cells',
     'nameLabel' => 'Batch name',
     'daysOfLifeLabel' => 'Days of life',
     'cycleLengthLabel' => 'Cycle length',
@@ -23,8 +24,22 @@ return [
     'addSuccessMessage' => 'New batch was added successfully.',
     'deleteSuccessMessage' => 'Batch was deleted successfully.',
     'updateSuccessMessage' => 'Batch :name was updated successfully.',
+    'modal' => [
+        'table' => [
+            'headline' => 'Limits for locations',
+            'locations' => 'Location',
+            'emptyHives' => 'Empty hives count',
+            'disposed' => 'Already disposed',
+            'limit' => 'Limit per location',
+        ],
+    ],
     'locationShortLabel' => 'Location',
     'disposedShortLabel' => 'Disposed',
     'limitShortLabel' => 'Limit',
     'emptyHives' => 'empty hives',
+    'type' => [
+        'label' => 'Type',
+        'queen' => 'Born queens',
+        'cells' => 'Queen cells',
+    ],
 ];

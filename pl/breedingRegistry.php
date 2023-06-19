@@ -57,6 +57,7 @@ return [
         'group' => 'Grupa',
         'is_alive' => 'Matka jest żywa',
         'is_alive_info' => 'Dzięki tej informacjo możemy śledzić matki, które opuściły żywe Twoją pasiekę i porównywać je w statystykach do matek, które utraciliśmy w trakcie hodowli.',
+        'year' => 'Rok',
     ],
     'sections' => [
         'general' => 'Podstawowe informacje',
@@ -115,5 +116,17 @@ return [
         'general_info' => 'Matki widoczne w sprzedaży pojawiają się na stanie magazynowym oraz są możliwe do przydzielenia do zamówienia. Matki widoczne w pasiece są widoczne w obecnym stanie pasieki.',
         'apiary' => 'Pasiece',
         'stock' => 'Sprzedaży',
+    ],
+    'date' => [
+        'label' => 'Daty'
+    ],
+    'multibar' => [
+        'selectedCount' => 'Liczba wybranych matek: :value',
+        'successMsg' => 'Pomyślnie dokonano zmian dla wybranych matek',
+        'actions' => [
+            'label' => 'Wybierz akcję',
+            'makeLost' => 'Oznacz jako utracone',
+            'contactUsWhatsapp' => 'Daj nam znać, jakich akcji tutaj brakuje (WhatsApp)',
+        ],
     ],
 ];

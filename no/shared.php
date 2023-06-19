@@ -24,8 +24,6 @@ return [
     'owner' => 'Eier',
     'noResults' => 'Ingen resultater å vise',
     'partnerPszczelarzaURI' => 'https://partnerpszczelarza.pl',
-    'privacyPolicyURI' => 'https://partnerpszczelarza.pl/polityka-prywatnosci',
-    'privacyPolicy' => 'Personvernerklæring',
     'today' => 'idag',
     'loadingDataMsg' => 'Laster inn data...',
     'continueBtnLabel' => 'Neste steg',
@@ -59,8 +57,33 @@ return [
     'uploadBtn' => 'Laste opp',
     'chooseBtn' => 'Velg',
     'downloadBtn' => 'Last ned',
-    'optionalFields' => 'Optional fields',
-    'goToSubscriptionPageBtn' => 'Upgrade your account',
-    'actionsLabel' => 'Actions',
-    'orText' => 'or',
+    'optionalFields' => 'Valgfrie felter',
+    'goToSubscriptionPageBtn' => 'Oppgrader kontoen din',
+    'actionsLabel' => 'Handlinger',
+    'orText' => 'eller',
+    'links' => [
+        'documentation' => [
+            'text' => 'Dokumentasjon',
+            'href' => 'https://partnerpszczelarza.pl/aplikacja-hodowcy/dokumentacja/',
+        ],
+        'privacyPolicy' => [
+            'text' => 'Personvernerklæring',
+            'href' => 'https://partnerpszczelarza.pl/polityka-prywatnosci',
+        ],
+    ],
+    'refreshBtn' => 'Forfriske',
+
+    // time
+    'today' => 'today',
+    'thisWeek' => 'this week',
+    'thisMonth' => 'this month',
+    'thisYear' => 'this year',
+    'customDateRange' => 'custom dates',
+    'from' => 'from',
+    'to' => 'to',
+    'dataTable' => [
+        'allOptionLabel' => 'All',
+        'rowsPerPageLabel' => 'Rows per page',
+        'pageText' => '{0}-{1} of {2}',
+    ],
 ];

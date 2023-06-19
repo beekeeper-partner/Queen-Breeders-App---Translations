@@ -48,5 +48,5 @@ return [
                     red - r,
                     green - g, blue - b</p>
                 <p>* if added ** for queens outside of apiary / imported</p>'
-    ]
+    ],
 ];

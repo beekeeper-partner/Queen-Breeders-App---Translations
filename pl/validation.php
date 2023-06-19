@@ -119,7 +119,7 @@ return [
     'prohibited_if' => 'The :attribute field is prohibited when :other is :value.',
     'prohibited_unless' => 'The :attribute field is prohibited unless :other is in :values.',
     'same' => 'The :attribute and :other must match.',
-    'serieOnBatchValidationError' => 'Limit matek z wybranej serii (:value) został przekroczony.',
+    'serieOnBatchValidationError' => 'Suma limitów matek na lokalizację (:sum) z wybranej serii przekroczyła limit dostępnych matek (:value). Skoryguj ilości w wybranych lokalizacjach i spróbuj zapisać zmiany ponownie.',
     'size' => [
         'numeric' => 'The :attribute must be :size.',
         'file' => 'The :attribute must be :size kilobytes.',

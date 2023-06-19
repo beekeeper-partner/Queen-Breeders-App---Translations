@@ -119,7 +119,7 @@ return [
     'prohibited_if' => ':attribute feltet er forbudt når :other is :value.',
     'prohibited_unless' => ':attribute felt er forbudt med mindre:other er andre :values.',
     'same' => ':attribute og :other må samsvare.',
-    'serieOnBatchValidationError' => 'Grensen for dronninger fra den valgte serien (:value) Det er overskredet.',
+    'serieOnBatchValidationError' => 'Grensen for dronninger (:sum) fra den valgte serien (:value) Det er overskredet.',
     'size' => [
         'numeric' => ':attribute må være :size.',
         'file' => ':attribute må være :size kilobytes.',
